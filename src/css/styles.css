@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url('./body.css');
 @import url('./reset.css');
 
 :root {

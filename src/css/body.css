@@ -1,0 +1,9 @@
+/* Body main properties */
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--main-dark-txt-cl);
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background-color: var(--main-gray-bg);
+}
