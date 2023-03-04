@@ -21,7 +21,7 @@
     <title>Mimino</title>
     
     <script type="module" crossorigin src="/team-8-html/assets/index-ec7ffcf3.js"></script>
-    <link rel="stylesheet" href="/team-8-html/assets/index-3c48d74e.css">
+    <link rel="stylesheet" href="/team-8-html/assets/index-d1af8596.css">
   </head>
   <body>
     <!-- Import example -->
@@ -502,6 +502,71 @@
 </section>
 
     </main>
+
+    <div class="backdrop">
+  <div class="modal modal-table">
+    <h2>BOOK <span>A TABLE</span></h2>
+    <svg class="">
+      <use href="/team-8-html/assets/sprite-93b33dc6.svg#x-close"></use>
+    </svg>
+
+    <form name="table_booking">
+      <label>
+        <input
+          type="text"
+          name="table_person_name"
+          placeholder="YOUR NAME"
+          minlength="2"
+          pattern="[A-Za-z]{1,32}"
+          title="Only latin letters"
+          required
+        />
+        <p>Who should book a table for?</p>
+      </label>
+
+      <label>
+        <select name="people_number" required>
+          <option selected="true" disabled="disabled">NUMBER OF PEOPLE</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </label>
+
+      <label>
+        <input
+          type="text"
+          placeholder="Today"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+          required
+        />
+        <p>What date to book?</p>
+      </label>
+
+      <label>
+        <input
+          type="tel"
+          name="table_phone_number"
+          placeholder="+ 38 ()"
+          minlength="10"
+          maxlength="10"
+          required
+        />
+        <p>Phone number</p>
+      </label>
+
+      <button type="submit">MAKE A RESERVATION</button>
+    </form>
+  </div>
+</div>
 
     
   </body>
