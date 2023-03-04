@@ -1,122 +1,103 @@
-<section class="location section">
-  <div class="container">
-    <!-- Img >= 1440px -->
-    <picture>
-      <!-- Desktop screen -->
-      <source
-        media="(min-width: 1440px)"
-        srcset="
-          ./img/home-page/location/map_desk.webp         1x,
-          ./img/home-page/location/map_desk.webp@2x.webp 2x
-        "
-        type="image/webp"
-      />
+<section>
+    <div class="">
+        
+        <!-- Img >= 1440px -->
+        <picture>
+            <!-- Desktop screen -->
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/home-page/location/map_desk.webp    1x,
+                ./img/home-page/location/map_desk.webp@2x.webp 2x "
+              type="image/webp"
+            />
 
-      <source
-        media="(min-width: 1440px)"
-        srcset="
-          ./img/home-page/location/map_desk.jpg    1x,
-          ./img/home-page/location/map_desk@2x.jpg 2x
-        "
-        type="image/jpg"
-      />
-      <img
-        src="./src/img/home-page/location/map_desk.jpg"
-        alt="Map"
-        loading="lazy"
-      />
-    </picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./img/home-page/location/map_desk.jpg    1x,
+                ./img/home-page/location/map_desk@2x.jpg 2x "
+              type="image/jpg"
+            />
+            <img
+              src="./src/img/home-page/location/map_desk.jpg"
+              alt="Map"
+              loading="lazy"
+            />
+          </picture>
+       
+        <h2> location </h2>
 
-    <h2 class="section-title">location</h2>
+        <!-- Img < 1440px -->
+         <picture>
+            <!-- Tablet screen -->
+            <source
+             media="(min-width: 768px)" 
+             srcset="
+                ./img/home-page/location/map_tabl.webp.webp    1x,
+                ./img/home-page/location/map_tabl@2x.webp 2x "
+             type="image/webp" 
+            />
+            <source 
+            media="(min-width: 768px)" 
+            srcset="
+                ./img/home-page/location/map_tabl.webp.webp    1x,
+                ./img/home-page/location/map_tabl@2x.webp 2x "
+            type="image/jpg" 
+            />
+        
+            <!-- Mobile screen -->
+            <source
+             media="(max-width: 767px)" 
+             srcset="
+                ./img/home-page/location/map_mob.webp    1x,
+                ./img/home-page/location/map_mob@2x.webp 2x
+              "
+             type="image/webp" 
+            />
+            <source 
+            media="(max-width: 767px)" 
+            srcset="
+                ./img/home-page/location/map_tabl.jpg    1x,
+                ./img/home-page/location/map_tabl@2x.jpg 2x "
+            type="image/jpg" 
+            />
+        
+            <img src="./src/img/home-page/location/map_mob.jpg"
+            alt="Map" alt="relax zone" loading="lazy" />
+        </picture>
 
-    <!-- Img < 1440px -->
-    <picture>
-      <!-- Tablet screen -->
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./img/home-page/location/map_tabl.webp.webp 1x,
-          ./img/home-page/location/map_tabl@2x.webp   2x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="
-          ./img/home-page/location/map_tabl.webp.webp 1x,
-          ./img/home-page/location/map_tabl@2x.webp   2x
-        "
-        type="image/jpg"
-      />
+          <a href="https://maps.visicom.ua/i/ADR3KAA8P5Z6TE2HZH?lang=uk"
+          target="_blank" 
+          rel="noopener noreferer nofollow"
+          class=" ">
+            <svg class="" >
+                <use href="/src/img/sprite.svg#mapPointer"></use>
+            </svg>
+        </a>
 
-      <!-- Mobile screen -->
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          ./img/home-page/location/map_mob.webp    1x,
-          ./img/home-page/location/map_mob@2x.webp 2x
-        "
-        type="image/webp"
-      />
-      <source
-        media="(max-width: 767px)"
-        srcset="
-          ./img/home-page/location/map_tabl.jpg    1x,
-          ./img/home-page/location/map_tabl@2x.jpg 2x
-        "
-        type="image/jpg"
-      />
-
-      <img
-        src="./src/img/home-page/location/map_mob.jpg"
-        alt="Map"
-        alt="relax zone"
-        loading="lazy"
-      />
-    </picture>
-
-    <a
-      href="https://maps.visicom.ua/i/ADR3KAA8P5Z6TE2HZH?lang=uk"
-      target="_blank"
-      rel="noopener noreferer nofollow"
-      class="map-link"
-    >
-      <svg class="map-icon">
-        <use href="/src/img/sprite.svg#mapPointer"></use>
-      </svg>
-    </a>
-
-    <div class="address-content">
-      <address class="location-address">
-        <ul class="address-list">
-          <li class="address-list-item">
-            <a
-              class="address-link"
-              href="https://maps.visicom.ua/i/ADR3KAA8P5Z6TE2HZH?lang=uk"
-              target="_blank"
-              rel="noopener noreferer nofollow"
-              >Ukraine, Poltava, <br />
-              St. Marshal Biryuzov, 15</a
-            >
-          </li>
-
-          <li class="address-list-item">
-            <div class="number-content">
-              <span class="address-text">call us:</span>
-
-              <ul class="address-list-number">
-                <li class="address-number-item">
-                  <a href="tel:+380955559533">(095) 555 95 33</a>
-                </li>
-
-                <li class="address-number-item">
-                  <a href="tel:+380668491089">(066) 849 10 89</a>
-                </li>
-              </ul>
+        <div class="">
+            <address>
+                <ul>
+                    <li><a class="" 
+                        href="https://maps.visicom.ua/i/ADR3KAA8P5Z6TE2HZH?lang=uk"
+                        target="_blank" 
+                        rel="noopener noreferer nofollow">Ukraine, Poltava, <br /> 
+                         St. Marshal Biryuzov, 15</a>
+                    </li>
+                <li>
+                    <div class="">
+                    <span>call us:</span>
+                    <ul class="">
+                        <li><a href="tel:+380955559533">(095) 555 95 33</a></li>
+                        <li><a href="tel:+380668491089">(066) 849 10 89</a></li>
+                    </ul>
+                </div>
+                    </li>
+                </ul>
+                </address>
+            
             </div>
-          </li>
-        </ul>
-      </address>
+        </div>
     </div>
-  </div>
 </section>
