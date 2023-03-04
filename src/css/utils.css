@@ -1,0 +1,67 @@
+/**
+  |============================
+  | Container
+  |============================
+*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+/**
+  |============================
+  | Section param
+  |============================
+*/
+.section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/**
+  |============================
+  | Section title
+  |============================
+*/
+.section-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 68px;
+  }
+}
