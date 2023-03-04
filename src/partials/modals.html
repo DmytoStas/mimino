@@ -1,23 +1,25 @@
+
 <div class="backdrop">
     <div class="modal modal-table">
-        <strong>BOOK <em>A TABLE</em></strong>
+        <h2>BOOK <span>A TABLE</span></h2>
         <svg class="" width="13.5" height="13.5">
-          <use href="..//img/sprite.svg#x-close"></use>
+        <use href="../img/sprite.svg#cross"></use>
         </svg>
 
         <form action="" name="table_booking">
             <div>
                 <div>
-                    <label for="table_person_name">Your name</label>
-                    <input type="text" id="table_person_name" name="table_person_name">
+                    <label for="table_person_name"></label>
+                    <input type="text" id="table_person_name" name="table_person_name" placeholder="Your name" minlength="2" pattern="[A-Za-z]{1,32}" title="Only latin letters" required>
                 </div>
                 <p>Who should book a table for?</p>
             </div>
 
             <div>
                 <div>
-                    <label for="table_people_number">Number of people</label>
-                    <select id="table_people_number" name="people_number">
+                    <label for="table_people_number"></label>
+                    <select id="table_people_number" name="people_number" required>
+                        <option value="8">8</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -34,8 +36,10 @@
 
             <div>
                 <div>
-                    <label for="table_date">Today</label>
-                    <input type="date" id="table_date" name="table_date">
+                    <label for="table_date"></label>
+                    <input type="text" placeholder="Today"
+                        onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                    <!--<input type="date" id="table_date" name="table_date" placeholder="none">-->
                 </div>
                 <p>What date to book?</p>
             </div>
@@ -43,7 +47,7 @@
             <div>
                 <div>
                     <label for="table_phone_number"></label>
-                    <input type="text" id="table_phone_number" name="table_phone_number" placeholder="+ 38 ()">
+                    <input type="tel" id="table_phone_number" name="table_phone_number" placeholder="+ 38 ()" minlength="10" maxlength="10" required>
                     <p>Phone number</p>
                 </div>
             </div>
@@ -52,3 +56,5 @@
         </form>
     </div>
 </div>
+
+<!--<script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>-->

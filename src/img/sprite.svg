@@ -26,6 +26,9 @@
     <symbol id="x-close" viewBox="0 0 16 16">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.143" d="m12 4-8 8m0-8 8 8"/>
     </symbol>
+    <svg id="cross" viewBox="0 0 16 16">
+      <path d="M14.6667 1.33337L1.33337 14.6667M1.33337 1.33337L14.6667 14.6667" stroke="#F7F7F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
     <symbol id="burger" viewBox="0 0 16 16">
       <path stroke-linecap="round" stroke-linejoin="round" d="M2 8h12M2 4h12M2 12h8"/>
     </symbol>
