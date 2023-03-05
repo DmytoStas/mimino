@@ -1,11 +1,13 @@
-<div class="backdrop">
-  <div class="modal modal-table">
-    <h2>BOOK <span>A TABLE</span></h2>
-    <svg class="">
-      <use href="/img/sprite.svg#x-close"></use>
-    </svg>
+<!-- Modal book a table -->
+<div class="modal modal-table" data-modal="1">
+  <h2>BOOK <i>A TABLE</i></h2>
 
-    <form name="table_booking">
+  <svg class="close-icon js-modal-close">
+    <use href="/img/sprite.svg#x-close"></use>
+  </svg>
+
+  <form name="table_booking_form">
+    <div>
       <label>
         <input
           type="text"
@@ -21,7 +23,7 @@
 
       <label>
         <select name="people_number" required>
-          <option selected="true" disabled="disabled">NUMBER OF PEOPLE</option>
+          <option selected hidden>NUMBER OF PEOPLE</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -33,17 +35,22 @@
           <option value="9">9</option>
           <option value="10">10</option>
         </select>
+        <!-- <svg class="select-icon" width="20" height="20">
+          <use href="/img/sprite.svg#chevron-down"></use>
+        </svg> -->
       </label>
 
       <label>
         <input
           type="text"
-          placeholder="Today"
-          onfocus="(this.type='date')"
-          onblur="(this.type='text')"
-          required
+          value="TODAY"
+          pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
+          maxlength="10"
         />
         <p>What date to book?</p>
+        <!-- <svg class="select-icon" width="20" height="20">
+          <use href="/img/sprite.svg#chevron-down"></use>
+        </svg> -->
       </label>
 
       <label>
@@ -53,12 +60,144 @@
           placeholder="+ 38 ()"
           minlength="10"
           maxlength="10"
+          autocomplete="off"
+          pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
           required
         />
         <p>Phone number</p>
       </label>
+    </div>
 
-      <button type="submit">MAKE A RESERVATION</button>
-    </form>
-  </div>
+    <!-- Modal button -->
+    <button class="main-btn" type="submit">MAKE A RESERVATION</button>
+  </form>
 </div>
+
+<!-- Modal book a room -->
+<div class="modal modal-room" data-modal="2">
+  <h2>BOOK <i>A ROOM</i></h2>
+
+  <svg class="close-icon js-modal-close">
+    <use href="/img/sprite.svg#x-close"></use>
+  </svg>
+
+  <form name="room_booking_form">
+    <div>
+      <label>
+        <input
+          type="text"
+          name="table_person_name"
+          placeholder="YOUR NAME"
+          minlength="2"
+          pattern="[A-Za-z]{1,32}"
+          title="Only latin letters"
+          required
+        />
+        <p>Who should book a table for?</p>
+      </label>
+      <label>
+        <input
+          type="tel"
+          name="table_phone_number"
+          placeholder="+ 38 ()"
+          minlength="10"
+          maxlength="10"
+          autocomplete="off"
+          pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+          required
+        />
+        <p>Phone number</p>
+      </label>
+      <label>
+        <input
+          type="text"
+          value="TODAY"
+          pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
+          maxlength="10"
+        />
+        <p>Check in date</p>
+        <!-- <svg class="select-icon" width="20" height="20">
+            <use href="/img/sprite.svg#chevron-down"></use>
+          </svg> -->
+      </label>
+      <label>
+        <input
+          type="text"
+          value="25/04/2023"
+          pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
+          maxlength="10"
+        />
+        <p>Check out date</p>
+        <!-- <svg class="select-icon" width="20" height="20">
+            <use href="/img/sprite.svg#chevron-down"></use>
+          </svg> -->
+      </label>
+      <label>
+        <select name="room_size">
+          <option value="double-suite" selected>DOUBLE SUITE</option>
+          <option value="triple">TRIPLE ROOM</option>
+          <option value="Four-seater">FOUR-SEATER ROOM</option>
+        </select>
+        <p>Number category</p>
+        <!-- <svg class="select-icon" width="20" height="20">
+            <use href="/img/sprite.svg#chevron-down"></use>
+          </svg> -->
+      </label>
+    </div>
+
+    <!-- Modal button -->
+    <button class="main-btn" type="submit">MAKE A RESERVATION</button>
+  </form>
+</div>
+
+<!-- Modal price per room -->
+<div class="modal" data-modal="3">
+  <h2>PRICES PER<i>ROOM</i></h2>
+
+  <h3>Double suite</h3>
+
+  <svg class="js-modal-close">
+    <use href="/img/sprite.svg#x-close"></use>
+  </svg>
+
+  <form name="prise_per_room_form">
+    <div>
+      <label>
+        <select name="number_of_nights">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+        <p>Number of nights</p>
+        <!-- <svg class="select-icon" width="20" height="20">
+            <use href="/img/sprite.svg#chevron-down"></use>
+          </svg> -->
+      </label>
+      <label>
+        <input
+          type="text"
+          value="TODAY"
+          pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
+          maxlength="10"
+        />
+        <p>Check in date</p>
+        <!-- <svg class="select-icon" width="20" height="20">
+            <use href="/img/sprite.svg#chevron-down"></use>
+          </svg> -->
+      </label>
+      <label>
+        <input type="text" value="1000" name="room_price" disabled />
+        <p>UAH</p>
+      </label>
+    </div>
+
+    <!-- Modal button -->
+    <button class="main-btn" type="submit">MAKE A RESERVATION</button>
+  </form>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
