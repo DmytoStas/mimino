@@ -1,0 +1,108 @@
+.about-kitchen-text {
+  line-height: 1.29;
+
+  letter-spacing: -0.02em;
+
+  color: var(--second-dark-txt-cl);
+}
+
+@media screen and (min-width: 768px) {
+  .about-kitchen-text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-kitchen-text {
+    font-weight: 500;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+/**
+|============================
+| Pictures
+|============================
+*/
+
+@media screen and (max-width: 1439px) {
+  .about-kitchen-description {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hotel-img-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .hotel-img-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .small-picture {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hotel-img-wrapper {
+    margin-bottom: 40px;
+  }
+  .hotel-img-list {
+    display: inline-flex;
+    gap: 32px;
+  }
+  .third {
+    order: 3;
+  }
+
+  .small-picture {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hotel-img-list {
+    display: inline-flex;
+    width: 100%;
+    gap: 32px;
+  }
+
+  .small-picture {
+    display: flex;
+    gap: 32px;
+  }
+
+  .kitchen-container {
+    position: relative;
+  }
+
+  .about-kitchen-description {
+    position: absolute;
+    bottom: 33px;
+    right: 32px;
+    display: inline-flex;
+    gap: 32px;
+    max-width: 833px;
+  }
+
+  .about-kitchen-text:first-child {
+    max-width: 334px;
+  }
+}
+/* 
+.third {
+  order: 3;
+} */
