@@ -1,0 +1,42 @@
+.restaurant {
+  padding-bottom: 0;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 68px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .section-text {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
+.slider-btns {
+  display: flex;
+  flex-direction: row;
+}
+.slider-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  fill: transparent;
+  stroke: var(--main-dark-txt-cl);
+  stroke-width: 1.8px;
+}
+
+.slider-icon {
+  width: 24px;
+  height: 24px;
+}
