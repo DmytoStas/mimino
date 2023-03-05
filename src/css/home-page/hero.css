@@ -1,5 +1,4 @@
 .hero {
-
   margin: 0 auto;
   padding: 507px 0 40px 0;
 
@@ -24,7 +23,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-  padding: 606px 0 38px 0;
+    padding: 606px 0 38px 0;
 
     background-image: var(--hero-mob_tabl-bg-gradient),
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_tabl.jpg);
@@ -45,13 +44,13 @@
 @media screen and (min-width: 1440px) {
   .hero {
     max-width: 1440px;
-padding: 274px 0 48px 0;
-text-align: left;
+    padding: 274px 0 48px 0;
+    text-align: left;
 
     background-image: var(--hero-desk-bg-gradient),
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_desk.jpg);
-     background-size: 542px 770px;
-      background-position: right;
+    background-size: 542px 770px;
+    background-position: right;
   }
 }
 
@@ -76,19 +75,19 @@ text-align: left;
   color: var(--main-white-txt-cl);
 }
 
-@media screen and (min-width:768px) {
-  .hero-home-title{
+@media screen and (min-width: 768px) {
+  .hero-home-title {
     margin-bottom: 32px;
     font-size: 150px;
-line-height: calc(150 / 150);
+    line-height: calc(150 / 150);
   }
 }
 
-@media screen and (min-width:1440px) {
-  .hero-home-title{
+@media screen and (min-width: 1440px) {
+  .hero-home-title {
     margin-bottom: 196px;
-font-size: 180px;
-line-height: calc(180 / 180);
+    font-size: 180px;
+    line-height: calc(180 / 180);
   }
 }
 
@@ -119,32 +118,32 @@ line-height: calc(180 / 180);
 .hero-home-btn {
   color: var(--main-white-txt-cl);
   font-size: 14px;
-line-height: calc(18 / 14);
+  line-height: calc(18 / 14);
 }
 
-@media screen and (min-width:768px) {
-  .hero-home-btn{
+@media screen and (min-width: 768px) {
+  .hero-home-btn {
     font-size: 14px;
-line-height: calc(24 / 14);
+    line-height: calc(24 / 14);
   }
 }
-
-@media screen and (min-width:1440px) {
-  .hero-home-btn{
-font-size: 18px;
-line-height: calc(24 / 18);
-  }
-}
-
-  .hero-home-text-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-  }
 
 @media screen and (min-width: 1440px) {
-  .hero-home-text-list{
-margin-right: 275px;
+  .hero-home-btn {
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  }
+}
+
+.hero-home-text-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-home-text-list {
+    margin-right: 275px;
   }
 }
 
