@@ -1,5 +1,13 @@
-.welcome {
-  padding-bottom: 0;
+@media screen and (max-width: 767px) {
+  .welcome-text-container {
+    margin-bottom: var(--main-gap);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .welcome-text-container {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -19,9 +27,13 @@
   font-size: 32px;
   line-height: 1.125;
 
-  margin-bottom: var(--main-gap);
-
   color: var(--second-dark-txt-cl);
+}
+
+@media screen and (max-width: 767px) {
+  .welcome-title {
+    margin-bottom: var(--main-gap);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -38,16 +50,6 @@
     max-width: 434px;
   }
 }
-
-@media screen and (min-width: 1440px) {
-  .welcome-title {
-  }
-}
-
-.welcome-title-italic {
-  font-style: italic;
-}
-
 .welcome-text {
   font-weight: 400;
   line-height: 1.29;
@@ -57,14 +59,13 @@
 }
 
 @media screen and (max-width: 767.98px) {
-  .welcome-text {
+  .welcome-text:not(:last-child) {
     margin-bottom: var(--main-gap);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
   .welcome-text {
-    margin-bottom: 40px;
     max-width: 366px;
   }
 }
