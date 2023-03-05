@@ -1,148 +1,138 @@
 /* RESTAURANT MENU */
 
-
-.rest-menu{
-    background-color: var(--main-black-bg);
+.rest-menu {
+  background-color: var(--main-black-bg);
 }
 
-.rest-menu .section-title{
-    color: var(--main-white-txt-cl);
-    margin-bottom: 100px;
-
+.rest-menu .section-title {
+  color: var(--main-white-txt-cl);
+  margin-bottom: 100px;
 }
 
-.rest-menu .section-subtitle{
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    font-style: italic;
-    
-     color: var(--main-white-txt-cl);
+.rest-container-mob {
+  display: none;
+}
 
-     margin-bottom: 32px;
+.rest-menu .section-subtitle {
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-style: italic;
+
+  color: var(--main-white-txt-cl);
+
+  margin-bottom: 32px;
 }
 
 @media screen and (max-width: 767.98px) {
-    .section-subtitle{
-        font-size: 18px;
-        line-height: 1.33;
-    }
-}
-
-.name-dish{
+  .section-subtitle {
     font-size: 18px;
     line-height: 1.33;
-    letter-spacing: -0.02em;
-    text-transform: capitalize;
-    
-     color: var(--main-white-txt-cl);
+  }
+}
+
+.name-dish {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+
+  color: var(--main-white-txt-cl);
 }
 
 @media screen and (max-width: 767.98px) {
-    .name-dish {
-        font-size: 14px;
-        line-height: 1.29;
-    }
-}
-
-.ingredients{
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.18em;
-    text-transform: capitalize;
-    
-    color: var(--third-white-txt-cl-50);
-
-    max-width: 345px;
-}
-
-@media screen and (max-width: 767.98px) {
-    .ingredients{
-        font-size: 10px;
-        line-height: 1.4;
-    }
-}
-
-.dish-weight{
+  .name-dish {
     font-size: 14px;
     line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-transform: lowercase;
-    
-    color: var(--second-white-txt-cl);
+  }
+}
+
+.ingredients {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  text-transform: none;
+
+  color: var(--third-white-txt-cl-50);
+
+  max-width: 345px;
 }
 
 @media screen and (max-width: 767.98px) {
-    .dish-weight{
-        font-size: 12px;
-        line-height: 1.17;
-    }
+  .ingredients {
+    font-size: 10px;
+    line-height: 1.4;
+  }
 }
 
-.dish-price{
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: -0.02em;
-    
-    color: var(--main-white-txt-cl);
+.dish-weight {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: lowercase;
+
+  color: var(--second-white-txt-cl);
 }
 
 @media screen and (max-width: 767.98px) {
-    .dish-price {
-        font-size: 14px;
-        line-height: 1.29;
-    }
+  .dish-weight {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+.dish-price {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+
+  color: var(--main-white-txt-cl);
+}
+
+@media screen and (max-width: 767.98px) {
+  .dish-price {
+    font-size: 14px;
+    line-height: 1.29;
+  }
 }
 
 /* POZITION FOR DESKTOP */
 
-
 @media screen and (min-width: 1440px) {
+  .block-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 74px;
+    row-gap: 50px;
+  }
 
-    .rest-container{
-        display: flex;
-        flex-basis: calc((100% - 74px) / 2);
-    }
-
-    .block-list {
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-        flex-wrap: wrap;
-        
-        gap: 74px;
-
-        max-width: 515px;
-    }
+  .block-list-item {
+    flex-basis: calc((100% - 74px) / 2);
+  }
 }
 
 /* POZITION INSIDE CARD */
 
-
-
-.kitchen-list-item{
-    display: flex;
-    justify-content: space-between;
-    margin: 16px 0;
+.kitchen-list-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
 }
 
-.dish-price{
-    min-width: 74px;
+.dish-price {
+  min-width: 74px;
 }
 
-.price-wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    row-gap: 8px;
+.price-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 8px;
 }
 
-.dish-wrap{
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
+.dish-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
-
-
-

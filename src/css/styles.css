@@ -8,7 +8,7 @@
 @import url('./reset.css');
 @import url('./utils.css');
 @import url('./main-btn.css');
-
+@import url('./restaurant-page/restaurant-menu.css');
 
 :root {
   --main-dark-txt-cl: #121212;
