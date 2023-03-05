@@ -1,0 +1,78 @@
+/**
+  |============================
+  | Main buttons
+  |============================
+*/
+.main-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: var(--main-btn-gap-mob);
+}
+@media screen and (min-width: 768px) {
+  .main-btn-group {
+    gap: var(--main-btn-gap-tabl);
+  }
+}
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  padding: 0 18px;
+
+  color: inherit;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 0.8px solid var(--main-black-bg);
+  border-radius: 32px;
+  transition: color var(--main-transition),
+    background-color var(--main-transition);
+}
+@media screen and (max-width: 374.98px) {
+  .main-btn {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-btn {
+    padding: 0 24px;
+    height: 40px;
+
+    line-height: 1.71;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-btn {
+    height: 42px;
+
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  color: var(--main-white-txt-cl);
+
+  background-color: var(--main-black-bg);
+}
+
+.hero .main-btn,
+.hotel .main-btn {
+  border-color: var(--main-white-txt-cl);
+}
+
+.hero .main-btn:hover,
+.hero .main-btn:focus,
+.hotel .main-btn:hover,
+.hotel .main-btn:focus,
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--main-black-bg);
+
+  background: var(--white-hov-foc);
+}
