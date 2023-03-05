@@ -138,7 +138,7 @@
 .hero-home-text-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: var(--main-gap);
 }
 
 @media screen and (min-width: 1440px) {

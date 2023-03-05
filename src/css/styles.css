@@ -8,7 +8,7 @@
 @import url('./reset.css');
 @import url('./utils.css');
 @import url('./main-btn.css');
-@import url('./home-page/hero.css');
+@import url('./home-page/welcome.css');
 
 :root {
   --main-dark-txt-cl: #121212;
@@ -43,6 +43,7 @@
   --header-border-cl-20: rgba(247, 247, 247, 0.2);
   --rating-mark-shd-cl-10: rgba(0, 0, 0, 0.1);
 
+  --main-gap: 32px;
   --soc-media-gap: 14px;
   --main-btn-gap-mob: 12px;
   --main-btn-gap-tabl: 14px;
