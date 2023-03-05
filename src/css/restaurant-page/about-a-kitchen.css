@@ -1,4 +1,4 @@
-.about-kitchen-text {
+.kitchen .section-text {
   line-height: 1.29;
 
   letter-spacing: -0.02em;
@@ -7,14 +7,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-kitchen-text {
+  .kitchen .section-text {
     font-size: 18px;
     line-height: 1.33;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .about-kitchen-text {
+  .kitchen .section-text {
     font-weight: 500;
   }
 }
@@ -29,16 +29,16 @@
 |============================
 */
 
-@media screen and (max-width: 1439px) {
-  .about-kitchen-description {
+@media screen and (max-width: 1439.98px) {
+  .kitchen .section-text-wrap {
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .hotel-img-wrapper {
+@media screen and (max-width: 767.98px) {
+  .hotel-img-wrap {
     margin-bottom: 32px;
   }
 
@@ -54,8 +54,8 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .hotel-img-wrapper {
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .hotel-img-wrap {
     margin-bottom: 40px;
   }
   .hotel-img-list {
@@ -89,7 +89,7 @@
     position: relative;
   }
 
-  .about-kitchen-description {
+  .kitchen .section-text-wrap {
     position: absolute;
     bottom: 33px;
     right: 32px;
@@ -98,7 +98,7 @@
     max-width: 833px;
   }
 
-  .about-kitchen-text:first-child {
+  .kitchen .section-text:first-child {
     max-width: 334px;
   }
 }
