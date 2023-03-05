@@ -1,4 +1,4 @@
-.hero {
+.hero-home {
   margin: 0 auto;
   padding: 507px 0 40px 0;
 
@@ -15,14 +15,14 @@
 @media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2),
   screen and (max-width: 767.98px) and (min-resolution: 192dpi),
   screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero-home {
     background-image: var(--hero-mob_tabl-bg-gradient),
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_mob@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero-home {
     padding: 606px 0 38px 0;
 
     background-image: var(--hero-mob_tabl-bg-gradient),
@@ -42,7 +42,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hero {
+  .hero-home {
     max-width: 1440px;
     padding: 274px 0 48px 0;
     text-align: left;
@@ -57,7 +57,7 @@
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1440px) and (min-resolution: 192dpi),
   screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero-home {
     background-image: var(--hero-desk-bg-gradient),
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_desk@2x.jpg);
   }
@@ -97,57 +97,68 @@
   }
 }
 
-.hero-home-btn-list {
+
+.hero-home  .main-btn-group {
   margin-bottom: 66px;
   gap: 14px;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-home-btn-list {
+.hero-home  .main-btn-group {
     margin-bottom: 86px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-home-btn-list {
+.hero-home  .main-btn-group {
     order: 2;
     margin-bottom: 0;
   }
 }
 
-.hero-home-btn {
+.hero-home .main-btn {
   color: var(--main-white-txt-cl);
+border: 0.8px solid var(--main-white-txt-cl);
   font-size: 14px;
   line-height: calc(18 / 14);
 }
 
+.hero-home .main-btn:hover,
+.hero-home .main-btn:focus {
+  color: var(--main-black-bg);
+
+  background: var(--white-hov-foc);
+}
+
+
 @media screen and (min-width: 768px) {
-  .hero-home-btn {
+.hero-home .main-btn {
     font-size: 14px;
     line-height: calc(24 / 14);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-home-btn {
+.hero-home .main-btn {
     font-size: 18px;
     line-height: calc(24 / 18);
   }
 }
 
-.hero-home-text-list {
+
+.hero-home .hero-text-list {
   display: flex;
   flex-wrap: wrap;
   gap: var(--main-gap);
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-home-text-list {
+.hero-home .hero-text-list {
     margin-right: 275px;
   }
 }
 
-.hero-home-text {
+.hero-home .hero-text {
   line-height: calc(18 / 14);
   max-width: 335px;
 
