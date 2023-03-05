@@ -76,7 +76,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-home-title {
+.hero-home .hero-title {
     margin-bottom: 32px;
     font-size: 150px;
     line-height: calc(150 / 150);
@@ -84,7 +84,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-home-title {
+.hero-home .hero-title {
     margin-bottom: 196px;
     font-size: 180px;
     line-height: calc(180 / 180);
