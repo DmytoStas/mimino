@@ -51,21 +51,10 @@
   .hero-home {
     padding: 274px 0 48px 0;
     text-align: left;
-    background-image: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .hero-wrapper {
-    position: absolute;
-    z-index: 0;
-    top: -274px;
-    right: 0;
-    width: 542px;
-    min-height: 770px;
     background-image: var(--hero-desk-bg-gradient),
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_desk.jpg);
-    background-size: 542px 770px;
+      background-size: 542px 770px;
+    background-position:calc(50% + 449px);
     background-repeat: no-repeat;
   }
 }
@@ -73,15 +62,9 @@
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1440px) and (min-resolution: 192dpi),
   screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .hero-wrapper {
+  .hero-home {
     background-image: var(--hero-desk-bg-gradient),
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_desk@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .hero-home .container {
-    position: relative;
   }
 }
 
@@ -134,7 +117,6 @@
   .hero-home .main-btn-group {
     order: 2;
     margin-bottom: 0;
-    z-index: var(--z-index-hero-cont);
     padding-right: 74px;
   }
 }
