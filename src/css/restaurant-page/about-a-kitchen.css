@@ -23,34 +23,38 @@
   font-style: italic;
 }
 
+.desktop {
+  display: none;
+}
+
 /**
 |============================
 | Pictures
 |============================
 */
 
-@media screen and (max-width: 1439.98px) {
-  .kitchen .section-text-wrap {
+@media screen and (max-width: 767.98px) {
+  .kitchen-img-wrap {
+    margin-bottom: var(--main-gap);
+  }
+
+  .kitchen-img-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
+  }
+
+  .small-picture-list {
+    display: flex;
+    gap: 20px;
   }
 }
 
 @media screen and (max-width: 767.98px) {
-  .kitchen-img-wrap {
-    margin-bottom: 32px;
-  }
-
-  .kitchen-img-list {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .small-picture {
+  .section-text-wrap .section-text-list {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 24px;
   }
 }
 
@@ -58,51 +62,56 @@
   .kitchen-img-wrap {
     margin-bottom: 40px;
   }
+
   .kitchen-img-list {
-    display: inline-flex;
-    gap: 32px;
+    display: flex;
+    gap: var(--main-gap);
   }
   .third {
     order: 3;
   }
 
-  .small-picture {
+  .small-picture-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  .section-text-list {
+    display: flex;
+    gap: var(--main-gap);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .kitchen-img-list {
-    display: inline-flex;
-    width: 100%;
-    gap: 32px;
-  }
-
-  .small-picture {
     display: flex;
-    gap: 32px;
+    gap: var(--main-gap);
+  }
+  .small-picture-list {
+    display: flex;
+    gap: var(--main-gap);
+    height: 100%;
   }
 
-  .kitchen-container {
-    position: relative;
+  .section-text-wrap {
+    display: none;
   }
 
-  .kitchen .section-text-wrap {
-    position: absolute;
-    bottom: 33px;
-    right: 32px;
-    display: inline-flex;
-    gap: 32px;
-    max-width: 833px;
+  .small-picture-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+  }
+  .desktop {
+    display: block;
+    max-width: 453px;
   }
 
-  .kitchen .section-text:first-child {
+  .small-picture-item:nth-child(1) {
     max-width: 334px;
   }
+  .small-picture-item:nth-child(2) {
+    max-width: 467px;
+  }
 }
-/* 
-.third {
-  order: 3;
-} */
