@@ -1,0 +1,39 @@
+/**
+  |============================
+  | Slider buttons
+  |============================
+*/
+.slider-btns {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .slider-btns {
+    gap: 32px;
+  }
+}
+
+.slider-btn {
+  font-size: 0;
+
+  background-color: transparent;
+  border: none;
+}
+
+.slider-icon {
+  width: 36px;
+  height: 36px;
+
+  fill: transparent;
+  stroke: var(--main-dark-txt-cl);
+}
+@media screen and (max-width: 767.98px) {
+  .slider-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.slider-btn:disabled .slider-icon {
+  stroke: var(--gray-arrow-cl-30);
+}

@@ -1,0 +1,124 @@
+/**
+  |============================
+  | Hotel
+  |============================
+*/
+.hotel {
+  color: var(--main-white-txt-cl);
+
+  background-color: var(--main-black-bg);
+}
+
+.hotel.section {
+  padding-top: var(--main-gap);
+  padding-bottom: var(--main-gap);
+}
+
+.hotel .section-text {
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.hotel-mob-img {
+  display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .hotel .section-title {
+    margin-bottom: var(--main-gap);
+  }
+
+  .hotel-text-wrap {
+    margin-bottom: 33px;
+  }
+
+  .hotel-img-list {
+    display: none;
+  }
+
+  .hotel-mob-img {
+    display: block;
+  }
+
+  .hotel-mob-img .main-img {
+    margin-bottom: 27px;
+  }
+
+  .hotel-swiper .slider-btns {
+    margin-top: 18px;
+  }
+
+  .hotel-mob-img {
+    margin-bottom: 40px;
+  }
+
+  .hotel .slider-icon {
+    stroke: var(--main-white-txt-cl);
+  }
+
+  .hotel .slider-btn:disabled .slider-icon {
+    stroke: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hotel.section {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .hotel-text-wrap {
+    display: flex;
+    align-items: start;
+    gap: var(--main-gap);
+    margin-bottom: 80px;
+  }
+
+  .hotel .section-text {
+    max-width: 362px;
+  }
+
+  .hotel-img-list {
+    display: flex;
+    gap: 16px;
+  }
+
+  .hotel-img-list .hotel-img-item:nth-child(2n - 1) {
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .hotel-img-list {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hotel.section {
+    padding-bottom: 60px;
+  }
+
+  .hotel-img-list {
+    justify-content: center;
+    gap: var(--main-gap);
+  }
+
+  .hotel-img-list .hotel-img-item:nth-child(2n - 1) {
+    gap: 28px;
+  }
+
+  .hotel-container {
+    position: relative;
+  }
+
+  .hotel .main-btn-group {
+    position: absolute;
+    top: 0;
+    right: var(--main-gap);
+  }
+}
