@@ -1,6 +1,11 @@
-<header class="header">
+<header class="header" data-header>
   <div class="container header-container">
-    <button type="button" class="mobile-menu-open">
+    <button
+      type="button"
+      class="mobile-menu-open js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg class="mobile-menu-open-icon">
         <use href="/img/sprite.svg#burger"></use>
       </svg>
@@ -11,7 +16,7 @@
       <ul class="nav-list">
         <li class="nav-item">
           <a
-            class="nav-link"
+            class="nav-link current"
             href="./index.html"
             rel="noopener nofollow noreferrer"
             >home</a
@@ -86,21 +91,17 @@
       </li>
     </ul>
   </div>
+</header>
 
-  <!-- MOBILE MENU -->
-  <div class="mob-menu container">
-    <button class="close-btn">
-      <svg class="close-icon">
-        <use href="/img/sprite.svg#x-close"></use>
-      </svg>
-    </button>
-
+<!-- MOBILE MENU -->
+<div class="mob-menu js-menu-container" id="mobile-menu">
+  <div class="mob-menu-container container">
     <!-- Navigation -->
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item">
           <a
-            class="nav-link"
+            class="nav-link current"
             href="./index.html"
             rel="noopener nofollow noreferrer"
             >home</a
@@ -169,4 +170,4 @@
       </li>
     </ul>
   </div>
-</header>
+</div>
