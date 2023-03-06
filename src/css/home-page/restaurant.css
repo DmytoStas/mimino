@@ -29,7 +29,7 @@
 }
 /* ---------------------- 
 ---------------------- */
-.section-text {
+.restaurant .section-text {
   font-weight: 500;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -40,16 +40,14 @@
     margin-bottom: var(--main-gap);
   }
 
-  .section-text {
+  .restaurant .section-text {
     max-width: 221px;
-    height: 54px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .section-text {
+  .restaurant .section-text {
     max-width: 221px;
-    height: 54px;
   }
 }
 
