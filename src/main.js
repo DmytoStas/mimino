@@ -1,3 +1,3 @@
-// import { swiperRestMainPg, swiperHotelMainPg } from './js/swiperInit'; С НИМ ВЫДАЕТ ОШИБКУ, НЕПРАВИЛЬНО ПОДКЛЮЧЕН ВНУТРИ ФАЙЛ!
+import { swiperRestMainPg, swiperHotelMainPg } from './js/swiperInit';
 
 import './js/header.js'
