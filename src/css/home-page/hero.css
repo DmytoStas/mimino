@@ -81,7 +81,6 @@
 
 @media screen and (min-width: 1440px) {
   .hero-home .container {
-    padding-right: 94px;
     position: relative;
   }
 }
@@ -136,6 +135,7 @@
     order: 2;
     margin-bottom: 0;
     z-index: var(--z-index-hero-cont);
+    padding-right: 74px;
   }
 }
 
