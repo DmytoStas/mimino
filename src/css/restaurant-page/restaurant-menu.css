@@ -42,6 +42,20 @@
       padding-left: 126px;
       padding-right: 126px;
     }
+
+  .rest-menu .section-title {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 36px;
+  }
+
+  .rest-menu .slider-icon {
+    stroke: var(--main-white-txt-cl);
+  }
+    
+  .rest-menu .slider-btn:disabled .slider-icon {
+    stroke: rgba(255, 255, 255, 0.3);
+  }
 }
 
 
