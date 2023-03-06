@@ -6,15 +6,15 @@
 
   background-image: var(--hero-mob_tabl-bg-gradient),
     url(/img/home-page/hero/unsplash_RFDP7_80v5A_mob.jpg);
-  background-size: 89%  439px;
+  background-size: 89% 439px;
   background-repeat: no-repeat;
   background-position: center 118px;
   text-align: center;
 }
 
-@media screen and (min-width:375px) {
-  .hero-home{
-  background-size: 335px 439px;
+@media screen and (min-width: 375px) {
+  .hero-home {
+    background-size: 335px 439px;
   }
 }
 
@@ -49,39 +49,42 @@
 
 @media screen and (min-width: 1440px) {
   .hero-home {
-    min-width: 1440px;
-    max-width: 1440px;
     padding: 274px 0 48px 0;
     text-align: left;
-    background-image: var(--hero-desk-bg-gradient),
-      url(/img/home-page/hero/unsplash_RFDP7_80v5A_desk.jpg);
-    background-size: 542px 770px;
-    background-position: right;
+    background-image: none;
   }
 }
 
-@media screen and (min-width:1440px) {
-  .hero-home{
-    min-width: 1440px;
-    background-color:black;
+@media screen and (min-width: 1440px) {
+  .hero-wrapper {
+    position: absolute;
+    z-index: 0;
+    top: -274px;
+    right: 0;
+    width: 542px;
+    min-height: 770px;
+    background-image: var(--hero-desk-bg-gradient),
+      url(/img/home-page/hero/unsplash_RFDP7_80v5A_desk.jpg);
+    background-size: 542px 770px;
+    background-repeat: no-repeat;
   }
 }
 
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 1440px) and (min-resolution: 192dpi),
   screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .hero-home {
+  .hero-wrapper {
     background-image: var(--hero-desk-bg-gradient),
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_desk@2x.jpg);
   }
 }
 
-@media screen and (min-width:1440px) {
-  .hero-home .container{
-  padding-right: 94px;
+@media screen and (min-width: 1440px) {
+  .hero-home .container {
+    padding-right: 94px;
+    position: relative;
+  }
 }
-}
-
 
 .hero-home .hero-title {
   font-weight: 400;
@@ -96,7 +99,7 @@
 }
 
 @media screen and (min-width: 768px) {
-.hero-home .hero-title {
+  .hero-home .hero-title {
     margin-bottom: 32px;
     font-size: 150px;
     line-height: calc(150 / 150);
@@ -104,7 +107,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-.hero-home .hero-title {
+  .hero-home .hero-title {
     margin-bottom: 196px;
     font-size: 180px;
     line-height: calc(180 / 180);
@@ -117,28 +120,28 @@
   }
 }
 
-
-.hero-home  .main-btn-group {
+.hero-home .main-btn-group {
   margin-bottom: 66px;
   gap: 14px;
 }
 
 @media screen and (min-width: 768px) {
-.hero-home  .main-btn-group {
+  .hero-home .main-btn-group {
     margin-bottom: 86px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-.hero-home  .main-btn-group {
+  .hero-home .main-btn-group {
     order: 2;
     margin-bottom: 0;
+    z-index: var(--z-index-hero-cont);
   }
 }
 
 .hero-home .main-btn {
   color: var(--main-white-txt-cl);
-border: 0.8px solid var(--main-white-txt-cl);
+  border: 0.8px solid var(--main-white-txt-cl);
   font-size: 14px;
   line-height: calc(18 / 14);
 }
@@ -150,21 +153,19 @@ border: 0.8px solid var(--main-white-txt-cl);
   background: var(--white-hov-foc);
 }
 
-
 @media screen and (min-width: 768px) {
-.hero-home .main-btn {
+  .hero-home .main-btn {
     font-size: 14px;
     line-height: calc(24 / 14);
   }
 }
 
 @media screen and (min-width: 1440px) {
-.hero-home .main-btn {
+  .hero-home .main-btn {
     font-size: 18px;
     line-height: calc(24 / 18);
   }
 }
-
 
 .hero-home .hero-text-list {
   display: flex;
@@ -173,7 +174,7 @@ border: 0.8px solid var(--main-white-txt-cl);
 }
 
 @media screen and (min-width: 1440px) {
-.hero-home .hero-text-list {
+  .hero-home .hero-text-list {
     margin-right: auto;
   }
 }
