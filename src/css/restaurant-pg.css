@@ -11,8 +11,6 @@
 @import url('./common/slider-btns.css');
 
 /* Main page */
-@import url('./home-page/welcome.css');
-@import url('./home-page/hotel.css');
 
 :root {
   --main-dark-txt-cl: #121212;

@@ -1,1 +1,1 @@
-import { swiperRestMainPg } from './js/swiperInit';
+import { swiperRestMainPg, swiperHotelMainPg } from './js/swiperInit';
