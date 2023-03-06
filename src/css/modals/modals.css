@@ -36,10 +36,21 @@
     line-height: 1.36;
     margin-bottom: 40px;
 }
-
-input {
+input, select {
     display: block;
+    color: var(--modal-white-txt-cl);
+    width: 287px;
+    height: 36px;
 }
+input::placeholder {
+    
+    color: var(--modal-white-txt-cl);
+    margin-bottom: 18px;
+}
+select option { 
+    color: black; 
+}
+
 .labels-wrapper {
     margin-bottom: 32px;
 }
@@ -54,7 +65,26 @@ input {
 .input-field {
     background-color: transparent;
     border: none;
-    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+}
+.input-field:focus {
+    outline: none;
+    border: none;
+    border-bottom: 0.8px solid var(--modal-white-txt-cl);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+    color: var(--modal-white-txt-cl);
+}
+
+input:not(:focus):valid, select:not(:focus):valid {
+    border: none;
+    border-bottom: 0.8px solid var(--modal-white-txt-cl);
 }
 .label-desc {
     font-size: 8px;
