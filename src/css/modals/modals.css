@@ -24,7 +24,18 @@
 }
 @media screen and (min-width:375px) {
     .modal {
-        max-width: 335px;
+        width: 335px;
+    }
+    .modal-price {
+        min-height: 414px;
+    }
+}
+@media screen and (min-width:768px){
+    .modal {
+        width: 628px;
+    }
+    .modal-price {
+        min-height: 430px;
     }
 }
 
@@ -70,8 +81,12 @@ input, select {
         height: 36px;
     } 
 }
+@media screen and (min-width:768px) {
+    /*input, select {
+        width: 266px;
+    } */
+}
 input::placeholder {
-    
     color: var(--modal-white-txt-cl);
     margin-bottom: 18px;
 }
@@ -82,13 +97,42 @@ select option {
 .labels-wrapper {
     margin-bottom: 32px;
 }
-.modal-label {
-    
-}
 .modal-label:not(:last-child) {
     display: block;
     margin-bottom: 32px;
    
+}
+@media screen and (min-width:768px) {
+    .field-set {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 16px;
+        justify-content: center;
+    }
+    /*.field-set-item {
+        display: flex;
+        flex-direction: column;
+    }*/
+    input, select {
+        width: 266px;
+    }
+    .modal-label:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .labels-wrapper {
+        margin-bottom: 80px;
+    }
+}
+.tab-desc-label {
+    display: none;
+}
+@media screen and (min-width:768px){
+    .tab-desc-label {
+        display: block;
+    }
+    .mob-label {
+        display: none;
+    }
 }
 .input-field {
     background-color: transparent;
