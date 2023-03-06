@@ -6,10 +6,16 @@
 
   background-image: var(--hero-mob_tabl-bg-gradient),
     url(/img/home-page/hero/unsplash_RFDP7_80v5A_mob.jpg);
-  background-size: 335px 439px;
+  background-size: 89%  439px;
   background-repeat: no-repeat;
-  background-position: 50% 118px;
+  background-position: center 118px;
   text-align: center;
+}
+
+@media screen and (min-width:375px) {
+  .hero-home{
+  background-size: 335px 439px;
+  }
 }
 
 @media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2),
@@ -43,14 +49,21 @@
 
 @media screen and (min-width: 1440px) {
   .hero-home {
+    min-width: 1440px;
     max-width: 1440px;
     padding: 274px 0 48px 0;
     text-align: left;
-
     background-image: var(--hero-desk-bg-gradient),
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_desk.jpg);
     background-size: 542px 770px;
     background-position: right;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .hero-home{
+    min-width: 1440px;
+    background-color:black;
   }
 }
 
@@ -62,6 +75,13 @@
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_desk@2x.jpg);
   }
 }
+
+@media screen and (min-width:1440px) {
+  .hero-home .container{
+  padding-right: 94px;
+}
+}
+
 
 .hero-home .hero-title {
   font-weight: 400;
@@ -154,7 +174,7 @@ border: 0.8px solid var(--main-white-txt-cl);
 
 @media screen and (min-width: 1440px) {
 .hero-home .hero-text-list {
-    margin-right: 275px;
+    margin-right: auto;
   }
 }
 
