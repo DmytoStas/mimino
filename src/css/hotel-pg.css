@@ -4,11 +4,13 @@
   | default @import url()
   |============================
 */
-@import url('./body.css');
-@import url('./reset.css');
-@import url('./utils.css');
-@import url('./main-btn.css');
-@import url('./modals/modals.css');
+@import url('./common/body.css');
+@import url('./common/reset.css');
+@import url('./common/utils.css');
+@import url('./common/main-btn.css');
+@import url('./common/slider-btns.css');
+
+/* Main page */
 
 :root {
   --main-dark-txt-cl: #121212;
@@ -19,7 +21,6 @@
 
   --main-white-txt-cl: #f7f7f7;
   --second-white-txt-cl: #d8d7d7;
-  --modal-white-txt-cl: #f6f6f6;
   --third-white-txt-cl-50: rgba(216, 215, 215, 0.5);
 
   /* Background */
