@@ -38,11 +38,11 @@
 }
 
 @media screen and (max-width: 767.98px) {
-  .hotel-img-wrap {
+  .kitchen-img-wrap {
     margin-bottom: 32px;
   }
 
-  .hotel-img-list {
+  .kitchen-img-list {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -55,10 +55,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
-  .hotel-img-wrap {
+  .kitchen-img-wrap {
     margin-bottom: 40px;
   }
-  .hotel-img-list {
+  .kitchen-img-list {
     display: inline-flex;
     gap: 32px;
   }
@@ -74,7 +74,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hotel-img-list {
+  .kitchen-img-list {
     display: inline-flex;
     width: 100%;
     gap: 32px;
