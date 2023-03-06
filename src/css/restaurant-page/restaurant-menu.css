@@ -7,20 +7,37 @@
 .rest-menu .section-title {
   color: var(--main-white-txt-cl);
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1440px) {
+.rest-menu .container {
+        padding-left: 168px;
+        padding-right: 168px;
+    }
 }
 
-.rest-container-mob {
-  display: none;
+
+@media screen and (min-width: 1440px) {
+    .rest-container-mob {
+            display: none;
+        }
 }
 
-.rest-menu .section-subtitle {
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  font-style: italic;
+@media screen and (max-width: 1439.98px) {
+    .rest-container {
+        display: none;
+    }
+}
 
-  color: var(--main-white-txt-cl);
+.rest-menu .section-subtitle{
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-style: italic;
+    
+     color: var(--main-white-txt-cl);
 
   margin-bottom: 32px;
 }
@@ -32,13 +49,13 @@
   }
 }
 
-.name-dish {
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: -0.02em;
-  text-transform: capitalize;
-
-  color: var(--main-white-txt-cl);
+.name-dish{
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    
+     color: var(--main-white-txt-cl);
 }
 
 @media screen and (max-width: 767.98px) {
@@ -48,16 +65,17 @@
   }
 }
 
-.ingredients {
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.18em;
-  text-transform: none;
+.ingredients{
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+    text-transform: none;
+    
+    color: var(--third-white-txt-cl-50);
 
-  color: var(--third-white-txt-cl-50);
-
-  max-width: 345px;
+    max-width: 345px;
 }
+
 
 @media screen and (max-width: 767.98px) {
   .ingredients {
@@ -116,6 +134,8 @@
 
 .kitchen-list-item {
   display: flex;
+  flex-wrap: wrap;
+ 
   justify-content: space-between;
   margin: 16px 0;
 }
@@ -136,3 +156,29 @@
   flex-direction: column;
   row-gap: 8px;
 }
+
+/* LINE */
+
+.kitchen-list-item::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 6px 0;
+    width: 100%;  
+    opacity: 0.2;
+    
+}
+
+.name-dish::before{
+    content: '';
+    display: inline-block;
+    background-color: var(--main-white-txt-cl);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 3px;
+}
+
+
