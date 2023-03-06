@@ -1,0 +1,125 @@
+.restaurant {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+@media screen and (min-width: 1440px) {
+  .restaurant {
+    padding-bottom: 26px;
+    padding-top: 44px;
+  }
+
+  .restaurant-content-wrap {
+    position: relative;
+
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* ---------------------- 
+---------------------- */
+.section-title {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    margin-bottom: 0px;
+  }
+}
+/* ---------------------- 
+---------------------- */
+.restaurant .section-text {
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .restaurant-text-wrap {
+    margin-bottom: var(--main-gap);
+  }
+
+  .restaurant .section-text {
+    max-width: 221px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant .section-text {
+    max-width: 221px;
+  }
+}
+
+/* ---------------------- 
+---------------------- */
+
+@media screen and (min-width: 768px) {
+  .restaurant-text-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: var(--main-gap);
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-text-wrap {
+    margin-bottom: 125px;
+  }
+}
+
+/* ---------------------- 
+---------------------- */
+.restaurant-slider-container {
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-slider-container {
+    margin-bottom: var(--main-gap);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-slider-container {
+    margin-bottom: 51px;
+  }
+}
+
+/* ---------------------- 
+---------------------- */
+.slider-btns {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .slider-btns {
+    gap: var(--main-gap);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant-slider-container {
+    padding-right: 0;
+  }
+  .slider-btns {
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .restaurant .main-btn-group {
+    position: absolute;
+    top: 0;
+    right: 32px;
+  }
+}
+
+@media screen and (max-width: 1439.9px) {
+  .swiper-slide.pic-desk-only {
+    display: none;
+  }
+}
