@@ -1,92 +1,15 @@
   <!-- Modal book a table -->
-<div class="backdrop-temp">
-  <div class="modal modal-table" data-modal="1">
-    <h2 class="modal-title">BOOK <i>A TABLE</i></h2>
-  
-    <svg class="close-icon js-modal-close">
-      <use href="/img/sprite.svg#x-close"></use>
-    </svg>
-  
-    <form class="table-booking-form" name="table_booking_form">
-      <div class="labels-wrapper">
-        <label class="modal-label">
-          <input class="input-field"
-            type="text"
-            name="table_person_name"
-            placeholder="YOUR NAME"
-            minlength="2"
-            pattern="[A-Za-z]{1,32}"
-            title="Only latin letters"
-            required
-          />
-          <span class="label-desc">Who should book a table for?</span>
-        </label>
-  
-        <label class="modal-label">
-          <select  class="input-field" name="people_number" required>
-            <option selected value="" hidden>NUMBER OF PEOPLE</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
-          <!-- <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg> -->
-        </label>
-  
-        <label class="modal-label">
-          <input class="input-field"
-            type="text"
-            value="TODAY"
-            pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
-            maxlength="10"
-          />
-          <span class="label-desc">What date to book?</span>
-          <!-- <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg> -->
-        </label>
-  
-        <label class="modal-label">
-          <input class="input-field"
-            type="tel"
-            name="table_phone_number"
-            placeholder="+ 38 ()"
-            minlength="10"
-            maxlength="13"
-            autocomplete="off"
-            pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
-            required
-          />
-          <span class="label-desc">Phone number</span>
-        </label>
-      </div>
-  
-      <!-- Modal button -->
-      <button class="main-btn modal-btn" type="submit">MAKE A RESERVATION</button>
-    </form>
-  </div>
-</div>
-
-<!-- Modal book a room -->
-<div class="modal modal-room" data-modal="2" hidden>
-  <h2>BOOK <i>A ROOM</i></h2>
+<div class="modal modal-table" data-modal="1" >
+  <h2 class="modal-title">BOOK <i>A TABLE</i></h2>
 
   <svg class="close-icon js-modal-close">
     <use href="/img/sprite.svg#x-close"></use>
   </svg>
 
-  <form class="room-booking-form" name="room_booking_form">
-    <div>
-      <label>
-        <input
+  <form class="table-booking-form" name="table_booking_form">
+    <div class="labels-wrapper">
+      <label class="modal-label">
+        <input class="input-field"
           type="text"
           name="table_person_name"
           placeholder="YOUR NAME"
@@ -95,10 +18,86 @@
           title="Only latin letters"
           required
         />
-        <span>Who should book a table for?</span>
+        <span class="label-desc">Who should book a table for?</span>
       </label>
-      <label>
-        <input
+
+      <label class="modal-label">
+        <select  class="input-field" name="people_number" required>
+          <option selected value="" hidden>NUMBER OF PEOPLE</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <!-- <svg class="select-icon" width="20" height="20">
+          <use href="/img/sprite.svg#chevron-down"></use>
+        </svg> -->
+      </label>
+
+      <label class="modal-label">
+        <input class="input-field"
+          type="text"
+          value="TODAY"
+          pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
+          maxlength="10"
+        />
+        <span class="label-desc">What date to book?</span>
+        <!-- <svg class="select-icon" width="20" height="20">
+          <use href="/img/sprite.svg#chevron-down"></use>
+        </svg> -->
+      </label>
+
+      <label class="modal-label">
+        <input class="input-field"
+          type="tel"
+          name="table_phone_number"
+          placeholder="+ 38 ()"
+          minlength="10"
+          maxlength="20"
+          autocomplete="off"
+          pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+          required
+        />
+        <span class="label-desc">Phone number</span>
+      </label>
+    </div>
+
+    <!-- Modal button -->
+    <button class="main-btn modal-btn" type="submit">MAKE A RESERVATION</button>
+  </form>
+</div>
+
+<!-- Modal book a room -->
+<div class="modal modal-room" data-modal="2">
+  <h2 class="modal-title">BOOK <i>A ROOM</i></h2>
+
+  <svg class="close-icon js-modal-close">
+    <use href="/img/sprite.svg#x-close"></use>
+  </svg>
+
+  <form class="room-booking-form" name="room_booking_form">
+    <div class="labels-wrapper">
+      <label class="modal-label">
+        <input class="input-field"
+          type="text"
+          name="table_person_name"
+          placeholder="YOUR NAME"
+          minlength="2"
+          pattern="[A-Za-z]{1,32}"
+          title="Only latin letters"
+          required
+        />
+        <span class="label-desc">Who should book a table for?</span>
+      </label>
+
+      <label class="modal-label">
+        <input class="input-field"
           type="tel"
           name="table_phone_number"
           placeholder="+ 38 ()"
@@ -108,39 +107,42 @@
           pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
           required
         />
-        <span>Phone number</span>
+        <span class="label-desc">Phone number</span>
       </label>
-      <label>
-        <input
+
+      <label class="modal-label">
+        <input class="input-field"
           type="text"
           value="TODAY"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
           maxlength="10"
         />
-        <span>Check in date</span>
+        <span class="label-desc">Check in date</span>
         <!-- <svg class="select-icon" width="20" height="20">
             <use href="/img/sprite.svg#chevron-down"></use>
           </svg> -->
       </label>
-      <label>
-        <input
+
+      <label class="modal-label">
+        <input class="input-field"
           type="text"
           value="25/04/2023"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
           maxlength="10"
         />
-        <span>Check out date</span>
+        <span class="label-desc">Check out date</span>
         <!-- <svg class="select-icon" width="20" height="20">
             <use href="/img/sprite.svg#chevron-down"></use>
           </svg> -->
       </label>
-      <label>
-        <select name="room_size">
+      
+      <label class="modal-label">
+        <select class="input-field" name="room_size">
           <option value="double-suite" selected>DOUBLE SUITE</option>
           <option value="triple">TRIPLE ROOM</option>
           <option value="Four-seater">FOUR-SEATER ROOM</option>
         </select>
-        <span>Number category</span>
+        <span class="label-desc">Number category</span>
         <!-- <svg class="select-icon" width="20" height="20">
             <use href="/img/sprite.svg#chevron-down"></use>
           </svg> -->
@@ -148,24 +150,24 @@
     </div>
 
     <!-- Modal button -->
-    <button class="main-btn" type="submit">MAKE A RESERVATION</button>
+    <button class="main-btn modal-btn" type="submit">MAKE A RESERVATION</button>
   </form>
 </div>
 
 <!-- Modal price per room -->
-<div class="modal" data-modal="3" hidden>
-  <h2>PRICES PER<i>ROOM</i></h2>
+<div class="modal" data-modal="3">
+  <h2 class="modal-title">PRICES PER<i>ROOM</i></h2>
 
-  <h3>Double suite</h3>
+  <h3 class="modal-subtitle">Double suite</h3>
 
-  <svg class="js-modal-close">
+  <svg class="close-icon js-modal-close">
     <use href="/img/sprite.svg#x-close"></use>
   </svg>
 
   <form class="price-per-room-form" name="price_per_room_form">
-    <div>
-      <label>
-        <select name="number_of_nights">
+    <div class="labels-wrapper">
+      <label class="modal-label">
+        <select class="input-field" name="number_of_nights">
           <option value="1" selected>1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -174,31 +176,33 @@
           <option value="6">6</option>
           <option value="7">7</option>
         </select>
-        <span>Number of nights</span>
+        <span class="label-desc">Number of nights</span>
         <!-- <svg class="select-icon" width="20" height="20">
             <use href="/img/sprite.svg#chevron-down"></use>
           </svg> -->
       </label>
-      <label>
-        <input
+
+      <label class="modal-label">
+        <input class="input-field"
           type="text"
           value="TODAY"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
           maxlength="10"
         />
-        <span>Check in date</span>
+        <span class="label-desc">Check in date</span>
         <!-- <svg class="select-icon" width="20" height="20">
             <use href="/img/sprite.svg#chevron-down"></use>
           </svg> -->
       </label>
-      <label>
-        <input type="text" value="1000" name="room_price" disabled />
-        <span>UAH</span>
+
+      <label class="modal-label">
+        <input class="input-field" type="text" value="1000" name="room_price" disabled />
+        <span class="label-desc">UAH</span>
       </label>
     </div>
 
     <!-- Modal button -->
-    <button class="main-btn" type="submit">MAKE A RESERVATION</button>
+    <button class="main-btn modal-btn" type="submit">MAKE A RESERVATION</button>
   </form>
 </div>
 

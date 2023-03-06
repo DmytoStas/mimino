@@ -1,6 +1,17 @@
 @import url('../styles.css');
-.modal:first-child {
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 15, 28, 0.61);
+    transition: opacity 400ms ease, visibility 400ms ease;
+}
+.modal {
     position: absolute;
+    z-index: 1001;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -36,11 +47,28 @@
     line-height: 1.36;
     margin-bottom: 40px;
 }
+.modal-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    color: var(--main-white-txt-cl);
+
+    margin-bottom: 24px;
+}
 input, select {
     display: block;
     color: var(--modal-white-txt-cl);
-    width: 287px;
+    width: 95%;
     height: 36px;
+}
+@media screen and (min-width: 375px){
+   input, select {
+        display: block;
+        color: var(--modal-white-txt-cl);
+        width: 287px;
+        height: 36px;
+    } 
 }
 input::placeholder {
     
