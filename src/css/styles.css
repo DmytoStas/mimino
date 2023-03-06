@@ -4,11 +4,14 @@
   | default @import url()
   |============================
 */
+
 @import url('./common/body.css');
 @import url('./common/reset.css');
 @import url('./common/utils.css');
 @import url('./common/main-btn.css');
 @import url('./home-page/welcome.css');
+@import url('./home-page/location.css');
+
 
 :root {
   --main-dark-txt-cl: #121212;
