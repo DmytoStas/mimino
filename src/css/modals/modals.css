@@ -13,7 +13,7 @@
 }
 @media screen and (min-width:375px) {
     .modal {
-        width: 335px;
+        max-width: 335px;
     }
 }
 
@@ -32,6 +32,8 @@
 
 .modal-title {
     font-weight: normal;
+    font-size: 28px;
+    line-height: 1.36;
     margin-bottom: 40px;
 }
 
@@ -49,11 +51,24 @@ input {
     margin-bottom: 32px;
    
 }
+.input-field {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);;
+}
+.label-desc {
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+    margin-top: 8px;
+    color: var(--second-white-txt-cl);
+}
 
 .modal-btn {
     color: var(--modal-white-txt-cl);
     border-color: var(--modal-white-txt-cl);
     height: 100%;
     padding: 14px 48px;
-
+    margin-left: auto;
+    margin-right: auto;
 }
