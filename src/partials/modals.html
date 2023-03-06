@@ -1,5 +1,5 @@
   <!-- Modal book a table -->
-<div class="modal modal-table" data-modal="1" hidden>
+<div class="modal modal-table" data-modal="1">
   <h2 class="modal-title">BOOK <i>A TABLE</i></h2>
 
   <svg class="close-icon js-modal-close">
@@ -7,7 +7,7 @@
   </svg>
 
   <form class="table-booking-form" name="table_booking_form">
-    <div class="labels-wrapper">
+    <div class="labels-wrapper field-set field-set-table">
       <label class="modal-label">
         <input class="input-field"
           type="text"
@@ -40,7 +40,7 @@
         </svg> -->
       </label>
 
-      <label class="modal-label">
+      <label class="modal-label order-label">
         <input class="input-field"
           type="text"
           value="TODAY"
@@ -82,7 +82,7 @@
   </svg>
 
   <form class="room-booking-form" name="room_booking_form">
-    <div class="labels-wrapper">
+    <div class="labels-wrapper field-set field-set-room">
       <label class="modal-label">
         <input class="input-field"
           type="text"
@@ -155,7 +155,7 @@
 </div>
 
 <!-- Modal price per room -->
-<div class="modal modal-price" data-modal="3">
+<div class="modal modal-price" data-modal="3" hidden>
   <h2 class="modal-title">PRICES PER <i>ROOM</i></h2>
 
   <h3 class="modal-subtitle">Double suite</h3>
@@ -165,8 +165,8 @@
   </svg>
 
   <form class="price-per-room-form" name="price_per_room_form">
-    <div class="labels-wrapper field-set">
-      <label class="modal-label field-set-item">
+    <div class="labels-wrapper field-set field-set-price">
+      <label class="modal-label">
         <select class="input-field" name="number_of_nights">
           <option value="1" selected>1</option>
           <option value="2">2</option>
@@ -182,7 +182,7 @@
           </svg> -->
       </label>
 
-      <label class="modal-label field-set-item">
+      <label class="modal-label mobile-label">
         <input class="input-field mob-label"
           type="text"
           value="TODAY"
@@ -195,7 +195,7 @@
           </svg> -->
       </label>
 
-      <label class="modal-label field-set-item">
+      <label class="modal-label">
         <input class="input-field tab-desc-label" type="text" value="1000" name="room_price" disabled />
         <span class="label-desc tab-desc-label">UAH</span>
       </label>

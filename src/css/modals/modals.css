@@ -16,7 +16,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 95%;
-    min-height: 528px;
     padding: 24px 24px 40px;
     border-radius: 2px;
     background: var(--main-black-bg);
@@ -33,9 +32,10 @@
 @media screen and (min-width:768px){
     .modal {
         width: 628px;
+        padding: 32px 32px 60px;
     }
     .modal-price {
-        min-height: 430px;
+        height: 430px;
     }
 }
 
@@ -46,12 +46,14 @@
     top: 14px;
     right: 14px;
     stroke: var(--modal-white-txt-cl);
+    transition: bachground-color var(--main-transition), border-radius var(--main-transition);
 }
-
-.table_booking_form, .room_booking_form, .price-per-room-form {
-    
+.close-icon:hover, .close-icon:focus {
+    background-color: var(--gray-txt-cl);
+    border-radius: 6px;
+    border: none;
+    outline: none;
 }
-
 .modal-title {
     font-weight: normal;
     font-size: 28px;
@@ -67,11 +69,23 @@
 
     margin-bottom: 24px;
 }
+@media screen and (min-width:768px) {
+    .modal-subtitle {
+        margin-bottom: 32px;
+    }
+    .modal-title {
+        font-size: 36px;
+        line-height: 1.11;
+        margin-bottom: 60px;
+    }
+}
 input, select {
     display: block;
     color: var(--modal-white-txt-cl);
     width: 95%;
     height: 36px;
+
+    transition: border-color var(--main-transition);
 }
 @media screen and (min-width: 375px){
    input, select {
@@ -94,21 +108,42 @@ select option {
     color: black; 
 }
 
-.labels-wrapper {
-    margin-bottom: 32px;
-}
 .modal-label:not(:last-child) {
     display: block;
     margin-bottom: 32px;
    
 }
+.labels-wrapper {
+    margin-bottom: 40px;
+}
+.modal-label.mobile-label {
+    margin-bottom: 0;
+}
+.label-desc {
+    display: block;
+    height: 12px;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+    margin-top: 8px;
+    color: var(--second-white-txt-cl);
+}
 @media screen and (min-width:768px) {
     .field-set {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 16px;
-        justify-content: center;
     }
+    .field-set-price {
+        column-gap: 16px;
+    }
+    .field-set-room, .field-set-table{
+        column-gap: 32px;
+        row-gap: 40px;
+    }
+    .modal-label:last-child {
+        left: 0;
+    }
+    
     /*.field-set-item {
         display: flex;
         flex-direction: column;
@@ -126,12 +161,16 @@ select option {
 .tab-desc-label {
     display: none;
 }
+
 @media screen and (min-width:768px){
     .tab-desc-label {
         display: block;
     }
     .mob-label {
         display: none;
+    }
+    .order-label {
+        order: 1;
     }
 }
 .input-field {
@@ -147,7 +186,7 @@ select option {
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-    transition: background-color 600000s 0s, color 600000s 0s;
+    transition: background-color var(--main-transition), color var(--main-transition);
 }
 input[data-autocompleted] {
     background-color: transparent !important;
@@ -158,19 +197,20 @@ input:not(:focus):valid, select:not(:focus):valid {
     border: none;
     border-bottom: 0.8px solid var(--modal-white-txt-cl);
 }
-.label-desc {
-    font-size: 8px;
-    line-height: 1.5;
-    letter-spacing: 0.18em;
-    margin-top: 8px;
-    color: var(--second-white-txt-cl);
-}
 
 .modal-btn {
     color: var(--modal-white-txt-cl);
     border-color: var(--modal-white-txt-cl);
-    height: 100%;
+    
     padding: 14px 48px;
     margin-left: auto;
     margin-right: auto;
+    height: 46px;
+}
+@media screen and (min-width: 768px) {
+    .modal-btn {
+        padding: 14px 130px;
+        height: 52px;
+    }
+    
 }
