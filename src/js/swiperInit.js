@@ -12,7 +12,6 @@ const swiperRestMainPg = new Swiper('.restaurant-swiper', {
   breakpoints: {
     768: {
       spaceBetween: 32,
-      slidesPerView: 2,
     },
     1440: {
       spaceBetween: 32,
@@ -41,5 +40,3 @@ const swiperHotelMainPg = new Swiper('.hotel-swiper', {
     prevEl: '.slider-btn-prev',
   },
 });
-
-export { swiperRestMainPg, swiperHotelMainPg };
