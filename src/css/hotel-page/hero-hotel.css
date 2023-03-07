@@ -1,0 +1,49 @@
+.hero-hotel{
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+@media screen and (min-width:768px) {
+    .hero-hotel{
+    padding-bottom: 40px;
+    }
+}
+
+
+.hero-hotel .hero-title{
+margin-bottom: 24px;
+
+font-weight: 400;
+font-size: 40px;
+line-height: calc(40 / 40);
+
+letter-spacing: -0.02em;
+}
+
+@media screen and (min-width:768px) {
+    .hero-hotel .hero-title{
+margin-bottom: 32px;
+
+        font-size: 80px;
+line-height: calc(80 / 80);
+    }
+}
+
+.hero-hotel .main-btn-group{
+    margin-bottom: 40px;
+}
+
+
+@media screen and (min-width:768px) {
+.hero-hotel .main-btn-group {
+    margin-bottom: 54px;
+    }
+}
+
+.hero-hotel .hero-text{
+max-width: 338px;
+
+line-height: calc(18 / 14);
+
+letter-spacing: 0.05em;
+}

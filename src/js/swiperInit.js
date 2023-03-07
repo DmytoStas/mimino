@@ -42,4 +42,5 @@ const swiperHotelMainPg = new Swiper('.hotel-swiper', {
   },
 });
 
-export { swiperRestMainPg, swiperHotelMainPg };
+
+export { swiperRestMainPg, swiperHotelMainPg,};
