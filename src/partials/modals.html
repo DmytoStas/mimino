@@ -58,9 +58,9 @@
           type="tel"
           name="table_phone_number"
           placeholder="+ 38 ()"
-          minlength="10"
+          minlength="19"
           maxlength="20"
-         
+          id="phoneNumber"
           pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
           required
         />
@@ -101,9 +101,9 @@
           type="tel"
           name="table_phone_number"
           placeholder="+ 38 ()"
-          minlength="10"
+          minlength="19"
           maxlength="20"
-         
+          id="phoneNumber2"
           pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
           required
         />
@@ -208,5 +208,20 @@
 
 <div class="overlay js-overlay-modal"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+
+<script
+  type="module"
+  src="http://code.jquery.com/jquery-1.7.2.min.js"
+></script>
+<script
+  type="module"
+  src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"
+></script>
+<script type="module" src="./js/datepicker.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/imask@6.4.3/dist/imask.min.js"></script>
+
 <script src="../js/modals.js"></script>
-<script src="../js/modal-fields.js"></script>
+<script src="../js/multiprice.js"></script>
+<script src="../js/phone-mask.js"></script>
