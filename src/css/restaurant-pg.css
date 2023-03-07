@@ -12,6 +12,7 @@
 
 /* Restaurant page */
 @import url('./restaurant-page/about-a-kitchen.css');
+@import url('./restaurant-page/restaurant-menu.css');
 
 :root {
   --main-dark-txt-cl: #121212;
