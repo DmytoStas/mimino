@@ -1,0 +1,144 @@
+
+/* ====================
+    FOR MOBILE 
+===================== */
+
+@media screen and (max-width: 767.98px) {
+    .triple-room-img-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        }
+    .triple-room-img-item:first-child{
+        order: 3;
+        position: absolute;
+        left: 178px;
+        top: 488px;
+       
+    }
+
+    .triple-room-cont-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .triple-room .section-title{
+        margin-top: 32px;
+    }
+
+    .triple-room .section-text{
+        margin-top: 32px;
+        column-gap: 20px;
+    }
+
+     .triple-room .main-btn-group {
+         margin-top: 28px;
+     }
+
+}
+
+/* ====================
+    FOR TABLET 
+===================== */
+
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+    .triple-room-img-list {
+        display: flex;
+        gap: 32px;
+        position: relative;
+    }
+
+    .triple-room-img-item:first-child {
+        order: 3;
+        position: absolute;
+        left: 363px;
+        top: 293px;
+    }
+
+    .triple-room-cont-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .triple-room .section-title {
+        margin-top: 40px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .triple-room .section-text-container{
+        display: flex;
+        gap: 32px;
+
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+   .triple-room .section-text {
+    display: flex;
+    margin-top: 32px;
+   }
+
+    .triple-room .main-btn-group {
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .triple-room .section-text:nth-of-type(1){
+        max-width: 365px;
+    }
+
+}
+
+/* ====================
+    FOR DESKTOP 
+===================== */
+
+@media screen and (min-width: 1440px) {
+
+    .triple-room-img-list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        }
+
+    .triple-room .text-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    
+    .triple-room .section-text-container {
+        font-size: 18px;
+        line-height: 1.33;
+
+        display: flex;
+
+        max-width: 686px;
+        gap: 32px;
+    }
+
+    .triple-room .section-text:nth-of-type(1) {
+        max-width: 365px;
+    }
+
+    .triple-room .triple-room-cont-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        margin-top: 50px;
+
+    }
+
+     .triple-room .section-title {
+        font-size: 40px;
+        font-weight: 700;   
+    }
+}
+
+
