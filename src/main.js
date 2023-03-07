@@ -1,1 +1,5 @@
-import { swiperRestMainPg, swiperHotelMainPg } from './js/swiperInit';
+// Swiper init
+import './js/swiperInit';
+
+// Header
+import './js/header.js';
