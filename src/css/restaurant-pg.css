@@ -9,10 +9,10 @@
 @import url('./common/utils.css');
 @import url('./common/main-btn.css');
 @import url('./common/slider-btns.css');
-@import url('./restaurant-page/restaurant-menu.css');
 
 /* Restaurant page */
 @import url('./restaurant-page/about-a-kitchen.css');
+@import url('./restaurant-page/restaurant-menu.css');
 
 :root {
   --main-dark-txt-cl: #121212;
