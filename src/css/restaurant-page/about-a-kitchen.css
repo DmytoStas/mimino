@@ -81,6 +81,10 @@
     display: flex;
     gap: var(--main-gap);
   }
+
+  .section-text-item:last-child {
+    max-width: 323px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
