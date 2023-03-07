@@ -1,0 +1,144 @@
+.live-map {
+  width: 335px;
+  height: 384px;
+  margin-bottom: var(--main-gap);
+  mix-blend-mode: luminosity;
+  border: none;
+  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
+
+.desk-only {
+  display: none;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.address-link {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  color: var(--second-dark-txt-cl);
+}
+.number-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.address-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--main-dark-txt-cl);
+}
+
+.address-list-number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.address-number-item {
+  font-size: 14px;
+  line-height: 1.29;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: var(--main-dark-txt-cl);
+}
+
+.address-number-item:hover,
+.address-number-item:focus {
+  transform: scaleX(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .address-list-number {
+    gap: 2px;
+  }
+
+  .address-number-item {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .location .section-title {
+    margin-bottom: var(--main-gap);
+  }
+
+  .address-list-item:first-child {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .live-map {
+    width: 704px;
+    height: 576px;
+  }
+  .location .section-title {
+    margin-bottom: 40px;
+  }
+
+  .address-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 356px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .live-map {
+    display: none;
+    margin-bottom: 0;
+  }
+  .desk-only {
+    display: block;
+    width: 640px;
+    height: 524px;
+  }
+  .location > .container {
+    display: flex;
+    gap: var(--main-gap);
+  }
+
+  .address-content {
+    margin-bottom: 0;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 70px;
+  }
+
+  .address-link {
+    margin-bottom: 0;
+  }
+
+  .section-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .number-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .address-text {
+    font-weight: 700;
+  }
+}
