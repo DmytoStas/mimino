@@ -41,5 +41,3 @@ const swiperHotelMainPg = new Swiper('.hotel-swiper', {
     prevEl: '.slider-btn-prev',
   },
 });
-
-export { swiperRestMainPg, swiperHotelMainPg };
