@@ -1,5 +1,5 @@
 .live-map {
-  width: 335px;
+  width: 100%;
   height: 384px;
   margin-bottom: var(--main-gap);
   mix-blend-mode: luminosity;
@@ -25,6 +25,7 @@
 }
 .number-content {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
