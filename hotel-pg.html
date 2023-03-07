@@ -16,182 +16,182 @@
     />
     <title>Hotel</title>
     
-    <script type="module" crossorigin src="/team-8-html/assets/swiperInit-2a9cbe46.js"></script>
-    <link rel="stylesheet" href="/team-8-html/assets/swiperInit-1043c9c1.css">
+    <script type="module" crossorigin src="/team-8-html/assets/header-3c3b8a86.js"></script>
+    <link rel="stylesheet" href="/team-8-html/assets/header-1043c9c1.css">
     <link rel="stylesheet" href="/team-8-html/assets/hotel-pg-a4435593.css">
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-  <div class="container header-container">
-    <button type="button" class="mobile-menu-open">
-      <svg class="mobile-menu-open-icon">
-        <use href="/team-8-html/assets/sprite-93b33dc6.svg#burger"></use>
-      </svg>
-    </button>
+    <header class="header" data-header>
+  <div class="header-border-container">
+    <div class="container header-container">
+      <button
+        type="button"
+        class="mobile-menu-open js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile-menu-open-icon">
+          <use href="/team-8-html/assets/sprite-39be307f.svg#burger"></use>
+        </svg>
+      </button>
+      <!-- Navigation -->
 
-    <!-- Navigation -->
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a
+              class="nav-link current"
+              href="./index.html"
+              rel="noopener nofollow noreferrer"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="./hotel-pg.html"
+              rel="noopener nofollow noreferrer"
+              >hotel</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="./restaurant-pg.html"
+              rel="noopener nofollow noreferrer"
+              >restaurant</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Logo -->
+      <a class="logo" href="" rel="noopener nofollow noreferrer">
+        <span class="accent">Mimino</span> restaurant-hotel complex
+      </a>
+      <!-- Social media -->
+      <ul class="soc-media">
+        <li class="soc-media-item">
           <a
-            class="nav-link"
-            href="./index.html"
-            rel="noopener nofollow noreferrer"
-            >home</a
+            class="soc-media-link"
+            href="https://www.instagram.com/"
+            rel="noopener noreferer nofollow"
+            target="_blank"
+            aria-label="Instagram"
           >
+            <svg class="soc-media-icon">
+              <use href="/team-8-html/assets/sprite-39be307f.svg#instagram"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
+        <li class="soc-media-item">
           <a
-            class="nav-link"
-            href="./hotel-pg.html"
-            rel="noopener nofollow noreferrer"
-            >hotel</a
+            class="soc-media-link"
+            href="https://www.facebook.com/"
+            rel="noopener noreferer nofollow"
+            target="_blank"
+            aria-label="Facebook"
           >
+            <svg class="soc-media-icon">
+              <use href="/team-8-html/assets/sprite-39be307f.svg#facebook"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
+        <li class="soc-media-item">
           <a
-            class="nav-link"
-            href="./restaurant-pg.html"
-            rel="noopener nofollow noreferrer"
-            >restaurant</a
+            class="soc-media-link"
+            href="https://twitter.com/"
+            rel="noopener noreferer nofollow"
+            target="_blank"
+            aria-label="Twitter"
           >
+            <svg class="soc-media-icon">
+              <use href="/team-8-html/assets/sprite-39be307f.svg#twitter"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </nav>
-
-    <!-- Logo -->
-    <a class="logo" href="" rel="noopener nofollow noreferrer">
-      <span class="accent">Mimino</span> restaurant-hotel complex
-    </a>
-
-    <!-- Social media -->
-    <ul class="soc-media">
-      <li class="soc-media-item">
-        <a
-          class="soc-media-link"
-          href="https://www.instagram.com/"
-          rel="noopener noreferer nofollow"
-          target="_blank"
-          aria-label="Instagram"
-        >
-          <svg class="soc-media-icon">
-            <use href="/team-8-html/assets/sprite-93b33dc6.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="soc-media-item">
-        <a
-          class="soc-media-link"
-          href="https://www.facebook.com/"
-          rel="noopener noreferer nofollow"
-          target="_blank"
-          aria-label="Facebook"
-        >
-          <svg class="soc-media-icon">
-            <use href="/team-8-html/assets/sprite-93b33dc6.svg#facebook"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="soc-media-item">
-        <a
-          class="soc-media-link"
-          href="https://twitter.com/"
-          rel="noopener noreferer nofollow"
-          target="_blank"
-          aria-label="Twitter"
-        >
-          <svg class="soc-media-icon">
-            <use href="/team-8-html/assets/sprite-93b33dc6.svg#twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    </div>
   </div>
 
   <!-- MOBILE MENU -->
-  <div class="mob-menu container">
-    <button class="close-btn">
-      <svg class="close-icon">
-        <use href="/team-8-html/assets/sprite-93b33dc6.svg#x-close"></use>
-      </svg>
-    </button>
+  <div class="mob-menu js-menu-container" id="mobile-menu">
+    <div class="mob-menu-container container">
+      <!-- Navigation -->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a
+              class="nav-link current"
+              href="./index.html"
+              rel="noopener nofollow noreferrer"
+              >home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="./hotel-pg.html"
+              rel="noopener nofollow noreferrer"
+              >hotel</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="./restaurant-pg.html"
+              rel="noopener nofollow noreferrer"
+              >restaurant</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Social media -->
+      <ul class="soc-media">
+        <li class="soc-media-item">
+          <a
+            class="soc-media-link"
+            href="https://www.instagram.com/"
+            rel="noopener noreferer nofollow"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <svg class="soc-media-icon">
+              <use href="/team-8-html/assets/sprite-39be307f.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
 
-    <!-- Navigation -->
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
+        <li class="soc-media-item">
           <a
-            class="nav-link"
-            href="./index.html"
-            rel="noopener nofollow noreferrer"
-            >home</a
+            class="soc-media-link"
+            href="https://www.facebook.com/"
+            rel="noopener noreferer nofollow"
+            target="_blank"
+            aria-label="Facebook"
           >
+            <svg class="soc-media-icon">
+              <use href="/team-8-html/assets/sprite-39be307f.svg#facebook"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
+
+        <li class="soc-media-item">
           <a
-            class="nav-link"
-            href="./hotel-pg.html"
-            rel="noopener nofollow noreferrer"
-            >hotel</a
+            class="soc-media-link"
+            href="https://twitter.com/"
+            rel="noopener noreferer nofollow"
+            target="_blank"
+            aria-label="Twitter"
           >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="./restaurant-pg.html"
-            rel="noopener nofollow noreferrer"
-            >restaurant</a
-          >
+            <svg class="soc-media-icon">
+              <use href="/team-8-html/assets/sprite-39be307f.svg#twitter"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </nav>
-    <!-- Social media -->
-    <ul class="soc-media">
-      <li class="soc-media-item">
-        <a
-          class="soc-media-link"
-          href="https://www.instagram.com/"
-          rel="noopener noreferer nofollow"
-          target="_blank"
-          aria-label="Instagram"
-        >
-          <svg class="soc-media-icon">
-            <use href="/team-8-html/assets/sprite-93b33dc6.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="soc-media-item">
-        <a
-          class="soc-media-link"
-          href="https://www.facebook.com/"
-          rel="noopener noreferer nofollow"
-          target="_blank"
-          aria-label="Facebook"
-        >
-          <svg class="soc-media-icon">
-            <use href="/team-8-html/assets/sprite-93b33dc6.svg#facebook"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="soc-media-item">
-        <a
-          class="soc-media-link"
-          href="https://twitter.com/"
-          rel="noopener noreferer nofollow"
-          target="_blank"
-          aria-label="Twitter"
-        >
-          <svg class="soc-media-icon">
-            <use href="/team-8-html/assets/sprite-93b33dc6.svg#twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    </div>
   </div>
 </header>
 
@@ -360,14 +360,14 @@
         <li>
           <button class="slider-btn slider-btn-prev" type="button">
             <svg class="slider-icon">
-              <use href="/team-8-html/assets/sprite-93b33dc6.svg#chevron-left"></use>
+              <use href="/team-8-html/assets/sprite-39be307f.svg#chevron-left"></use>
             </svg>
           </button>
         </li>
         <li>
           <button class="slider-btn slider-btn-next" type="button">
             <svg class="slider-icon">
-              <use href="/team-8-html/assets/sprite-93b33dc6.svg#chevron-right"></use>
+              <use href="/team-8-html/assets/sprite-39be307f.svg#chevron-right"></use>
             </svg>
           </button>
         </li>
@@ -918,7 +918,7 @@
             aria-label="Instagram"
           >
             <svg class="soc-media-icon">
-              <use href="/team-8-html/assets/sprite-93b33dc6.svg#instagram"></use>
+              <use href="/team-8-html/assets/sprite-39be307f.svg#instagram"></use>
             </svg>
           </a>
         </li>
@@ -932,7 +932,7 @@
             aria-label="Facebook"
           >
             <svg class="soc-media-icon">
-              <use href="/team-8-html/assets/sprite-93b33dc6.svg#facebook"></use>
+              <use href="/team-8-html/assets/sprite-39be307f.svg#facebook"></use>
             </svg>
           </a>
         </li>
@@ -946,7 +946,7 @@
             aria-label="Twitter"
           >
             <svg class="soc-media-icon">
-              <use href="/team-8-html/assets/sprite-93b33dc6.svg#twitter"></use>
+              <use href="/team-8-html/assets/sprite-39be307f.svg#twitter"></use>
             </svg>
           </a>
         </li>
@@ -962,7 +962,7 @@
   <h2>BOOK <i>A TABLE</i></h2>
 
   <svg class="close-icon js-modal-close">
-    <use href="/team-8-html/assets/sprite-93b33dc6.svg#x-close"></use>
+    <use href="/team-8-html/assets/sprite-39be307f.svg#x-close"></use>
   </svg>
 
   <form name="table_booking_form">
@@ -1037,7 +1037,7 @@
   <h2>BOOK <i>A ROOM</i></h2>
 
   <svg class="close-icon js-modal-close">
-    <use href="/team-8-html/assets/sprite-93b33dc6.svg#x-close"></use>
+    <use href="/team-8-html/assets/sprite-39be307f.svg#x-close"></use>
   </svg>
 
   <form name="room_booking_form">
@@ -1116,7 +1116,7 @@
   <h3>Double suite</h3>
 
   <svg class="js-modal-close">
-    <use href="/team-8-html/assets/sprite-93b33dc6.svg#x-close"></use>
+    <use href="/team-8-html/assets/sprite-39be307f.svg#x-close"></use>
   </svg>
 
   <form name="prise_per_room_form">
