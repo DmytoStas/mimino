@@ -4,19 +4,14 @@
   | default @import url()
   |============================
 */
-
 @import url('./common/body.css');
 @import url('./common/reset.css');
 @import url('./common/utils.css');
 @import url('./common/main-btn.css');
 @import url('./common/slider-btns.css');
 
-/* Main page */
-@import url('./home-page/header-home.css');
-@import url('./home-page/hero.css');
-@import url('./home-page/restaurant.css');
-@import url('./home-page/welcome.css');
-@import url('./home-page/hotel.css');
+/* Restaurant page */
+@import url('./restaurant-page/about-a-kitchen.css');
 
 :root {
   --main-dark-txt-cl: #121212;
