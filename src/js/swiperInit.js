@@ -41,5 +41,31 @@ const swiperHotelMainPg = new Swiper('.hotel-swiper', {
   },
 });
 
-export { swiperRestMainPg, swiperHotelMainPg,};
+const swiperHero = new Swiper('.hero-swiper', {
+  modules: [Navigation],
+  setWrapperSize: true,
+  uniqueNavElements: true,
+  speed: 300,
+  spaceBetween: 20,
+  slidesPerView: 1.39,
+  breakpoints: {
+    768: {
+      spaceBetween: 32,
+      slidesPerView: 1.64,
+    },
+    1440: {
+      spaceBetween: 32,
+      slidesPerView: 1.575,
+      grabCursor: true,
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-btn-next',
+    prevEl: '.slider-btn-prev',
+  },
+});
+
+export { swiperRestMainPg, swiperHotelMainPg, swiperHero};
 
