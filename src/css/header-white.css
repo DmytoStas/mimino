@@ -9,6 +9,12 @@
     backdrop-filter var(--main-transition), box-shadow var(--main-transition);
 }
 
+.header.no-transparency {
+  background-color: rgb(255 255 255 / 75%);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 12px rgb(255 255 255 / 40%);
+}
+
 .header-border-container {
   position: relative;
   z-index: 998;
