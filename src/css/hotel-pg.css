@@ -10,6 +10,9 @@
 @import url('./common/main-btn.css');
 @import url('./common/slider-btns.css');
 
+/* Hotel page */
+@import url('./header-white.css');
+
 :root {
   --main-dark-txt-cl: #121212;
   --second-dark-txt-cl: #000;

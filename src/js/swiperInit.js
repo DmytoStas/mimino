@@ -59,13 +59,18 @@ const swiperHero = new Swiper('.hero-swiper', {
       grabCursor: true,
     },
   },
+});
 
+const swiperResMunuRestPg = new Swiper('.rest-pg-swiper', {
+  modules: [Navigation],
+  uniqueNavElements: true,
+  setWrapperSize: true,
+  speed: 300,
+  spaceBetween: 32,
+  slidesPerView: 1,
   // Navigation arrows
   navigation: {
     nextEl: '.slider-btn-next',
     prevEl: '.slider-btn-prev',
   },
 });
-
-export { swiperRestMainPg, swiperHotelMainPg, swiperHero};
-
