@@ -15,7 +15,7 @@
           placeholder="YOUR NAME"
           minlength="2"
           pattern="[A-Za-z]{1,32}"
-          title="Only latin letters"
+          title="Only latin letters" autocomplete="off"
           required
         />
         <span class="label-desc">Who should book a table for?</span>
@@ -45,7 +45,7 @@
           type="text"
           value="TODAY"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
-          maxlength="10"
+          maxlength="10" autocomplete="off"
         />
         <span class="label-desc">What date to book?</span>
         <!-- <svg class="select-icon" width="20" height="20">
@@ -74,7 +74,7 @@
 </div>
 
 <!-- Modal book a room -->
-<div class="modal modal-room" data-modal="2" hidden>
+<div class="modal modal-room" data-modal="2">
   <h2 class="modal-title">BOOK <i>A ROOM</i></h2>
 
   <svg class="close-icon js-modal-close">
@@ -90,7 +90,7 @@
           placeholder="YOUR NAME"
           minlength="2"
           pattern="[A-Za-z]{1,32}"
-          title="Only latin letters"
+          title="Only latin letters" autocomplete="off"
           required
         />
         <span class="label-desc">Who should book a table for?</span>
@@ -102,7 +102,7 @@
           name="table_phone_number"
           placeholder="+ 38 ()"
           minlength="10"
-          maxlength="10"
+          maxlength="20"
           autocomplete="off"
           pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
           required
@@ -115,7 +115,7 @@
           type="text"
           value="TODAY"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
-          maxlength="10"
+          maxlength="10" autocomplete="off"
         />
         <span class="label-desc">Check in date</span>
         <!-- <svg class="select-icon" width="20" height="20">
@@ -128,7 +128,7 @@
           type="text"
           value="25/04/2023"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
-          maxlength="10"
+          maxlength="10" autocomplete="off"
         />
         <span class="label-desc">Check out date</span>
         <!-- <svg class="select-icon" width="20" height="20">
@@ -155,7 +155,7 @@
 </div>
 
 <!-- Modal price per room -->
-<div class="modal modal-price" data-modal="3" hidden>
+<div class="modal modal-price" data-modal="3">
   <h2 class="modal-title">PRICES PER <i>ROOM</i></h2>
 
   <h3 class="modal-subtitle">Double suite</h3>
@@ -167,7 +167,7 @@
   <form class="price-per-room-form" name="price_per_room_form">
     <div class="labels-wrapper field-set field-set-price">
       <label class="modal-label">
-        <select class="input-field" name="number_of_nights">
+        <select class="input-field" name="number_of_nights" id="nightsSelected">
           <option value="1" selected>1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -187,7 +187,7 @@
           type="text"
           value="TODAY"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
-          maxlength="10"
+          maxlength="10" autocomplete="off"
         />
         <span class="label-desc mob-label">Check in date</span>
         <!-- <svg class="select-icon" width="20" height="20">
@@ -196,7 +196,7 @@
       </label>
 
       <label class="modal-label">
-        <input class="input-field tab-desc-label" type="text" value="1000" name="room_price" disabled />
+        <input class="input-field tab-desc-label" type="text" value="1000" name="room_price" disabled id="price"/>
         <span class="label-desc tab-desc-label">UAH</span>
       </label>
     </div>
@@ -207,3 +207,6 @@
 </div>
 
 <div class="overlay js-overlay-modal"></div>
+
+<script src="../js/modals.js"></script>
+<script src="../js/modal-fields.js"></script>
