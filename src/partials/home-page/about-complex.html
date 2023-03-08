@@ -3,10 +3,10 @@
   <div class="container">
     <h2 class="section-title" hidden>About a complex</h2>
 
-    <ul class="hotel-img-list">
-      <li class="hotel-img-item">
+    <ul class="about-img-list about">
+      <li class="about-img-item">
         <!-- Tablet/Desktop screen -->
-        <picture>
+        <picture class="first-pic">
           <source
             media="(min-width: 768px)"
             srcset="
@@ -49,7 +49,7 @@
           />
         </picture>
 
-        <picture>
+        <picture class="second-pic">
           <!-- Desktop screen -->
           <source
             media="(min-width: 1440px)"
@@ -110,29 +110,29 @@
             loading="lazy"
           />
         </picture>
-
-        <h3 class="section-subtitle">restaurant-hotel complex</h3>
-        <p class="section-text">
-          Indulge in a taste of luxury with every bite at Hotel Mimino. From the
-          freshest seafood to the most succulent steaks, every dish is crafted
-          with care to ensure that you enjoy a truly memorable dining
-          experience.
-        </p>
-        <p class="section-text">
-          Treat yourself to a taste of the good life and come dine with us
-          today!
-        </p>
-
-        <div class="rating-mark">
-          <p class="rating-name">Maria</p>
+        <div class="section-description">
+          <h3 class="section-subtitle">restaurant-hotel complex</h3>
+          <p class="section-text">
+            Indulge in a taste of luxury with every bite at Hotel Mimino. From
+            the freshest seafood to the most succulent steaks, every dish is
+            crafted with care to ensure that you enjoy a truly memorable dining
+            experience.
+          </p>
+          <p class="section-text">
+            Treat yourself to a taste of the good life and come dine with us
+            today!
+          </p>
+        </div>
+        <div class="rating-mark maria">
+          <span class="rating-point">Maria</span>
           <p class="rating-text">
             give rating <span class="rating-point">4.5</span>
           </p>
         </div>
       </li>
 
-      <li class="hotel-img-item">
-        <picture>
+      <li class="about-img-item">
+        <picture class="first-pic">
           <!-- Tablet/Desktop screen -->
           <source
             media="(min-width: 768px)"
@@ -176,61 +176,65 @@
           />
         </picture>
 
-        <picture>
-          <!-- Tablet/Desktop screen -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk.webp    1x,
-              ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk.jpg    1x,
-              ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk@2x.jpg 2x
-            "
-            type="image/jpg"
-          />
+        <div class="pic-box">
+          <picture class="second-pic">
+            <!-- Tablet/Desktop screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk.webp    1x,
+                ./img/home-page/about/webp/unsplash_RFDP7_80v5A_tabl-desk@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk.jpg    1x,
+                ./img/home-page/about/unsplash_RFDP7_80v5A_tabl-desk@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
 
-          <!-- Mobile screen -->
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob.webp    1x,
-              ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg    1x,
-              ./img/home-page/about/unsplash_RFDP7_80v5A_mob@2x.jpg 2x
-            "
-            type="image/jpg"
-          />
+            <!-- Mobile screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob.webp    1x,
+                ./img/home-page/about/webp/unsplash_RFDP7_80v5A_mob@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg    1x,
+                ./img/home-page/about/unsplash_RFDP7_80v5A_mob@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
 
-          <img
-            src="./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg"
-            alt="Restaurant room"
-            loading="lazy"
-          />
-        </picture>
+            <img
+              src="./img/home-page/about/unsplash_RFDP7_80v5A_mob.jpg"
+              alt="Restaurant room"
+              loading="lazy"
+            />
+          </picture>
 
-        <h3 class="section-subtitle">business class hotel</h3>
-        <p class="section-text">
-          The Mimino hotel features spacious and stylish double luxury rooms
-          with modern amenities for a comfortable stay.
-        </p>
+          <div class="section-description">
+            <h3 class="section-subtitle">business class hotel</h3>
+            <p class="section-text">
+              The Mimino hotel features spacious and stylish double luxury rooms
+              with modern amenities for a comfortable stay.
+            </p>
+          </div>
 
-        <div class="rating-mark">
-          <p class="rating-name">Alexander</p>
-          <p class="rating-text">
-            give rating <span class="rating-point">5.5</span>
-          </p>
+          <div class="rating-mark alexandr">
+            <span class="rating-point">Alexander</span>
+            <p class="rating-text">
+              give rating <span class="rating-point">5.5</span>
+            </p>
+          </div>
         </div>
       </li>
     </ul>

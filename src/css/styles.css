@@ -14,10 +14,12 @@
 /* Main page */
 @import url('./home-page/header-home.css');
 @import url('./home-page/hero.css');
+@import url('./home-page/about-complex.css');
 @import url('./home-page/restaurant.css');
 @import url('./home-page/welcome.css');
 @import url('./home-page/hotel.css');
 @import url('./home-page/location.css');
+@import url('./footer.css');
 
 @import url('./modals/modals.css');
 
