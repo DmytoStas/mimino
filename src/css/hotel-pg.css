@@ -14,6 +14,7 @@
 /* Hotel page */
 @import url('./header-white.css');
 @import url('./hotel-page/hero-hotel.css');
+@import url('./hotel-page/hotel-room.css');
 @import url('./footer.css');
 
 :root {
