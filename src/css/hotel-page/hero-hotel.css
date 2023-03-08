@@ -3,6 +3,19 @@
   padding-bottom: 0;
 }
 
+.hero-hotel picture {
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 0.2),
+    rgba(18, 18, 18, 0.2)
+  );
+}
+
+.hero-hotel img {
+  position: relative;
+  z-index: -1;
+}
+
 @media screen and (min-width: 768px) {
   .hero-hotel {
     padding-bottom: 40px;
@@ -37,12 +50,12 @@
   }
 }
 
-@media screen and (min-width:1440px) {
-    .hero-block {
-  padding: 174px 0 242px 0;
-  margin-right: auto;
-width: 705px;
-}
+@media screen and (min-width: 1440px) {
+  .hero-block {
+    padding: 184px 0 242px 0;
+    margin-right: auto;
+    width: 705px;
+  }
 }
 
 .hero-hotel .hero-title {
@@ -64,31 +77,31 @@ width: 705px;
   }
 }
 
-.hero-hotel .main-btn-group {
+.hero-block {
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-hotel .main-btn-group {
+  .hero-block {
     margin-bottom: 54px;
+  }
+
+  .hero-hotel .main-btn-group {
     justify-content: start;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-hotel .main-btn-group {
-    margin-bottom: 54px;
     justify-content: start;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-hotel .main-btn-group {
+  .hero-block {
     margin-bottom: 0;
   }
 }
-
-
 
 .hero-hotel .hero-text {
   line-height: calc(18 / 14);
@@ -106,9 +119,9 @@ width: 705px;
 
 @media screen and (min-width: 1440px) {
   .hero-hotel .hero-text {
-position: absolute;
-left: calc(50% - 687px);
-bottom: 48px;
+    position: absolute;
+    left: calc(50% - 687px);
+    bottom: 48px;
 
     padding: 0;
     max-width: 338px;
@@ -136,25 +149,24 @@ bottom: 48px;
 /* !swiper */
 
 @media screen and (min-width: 1440px) {
-  .hero-swiper {
+  .hotel-hero-swiper {
     width: 703px;
   }
 }
 
-.hero-swiper .swiper-wrapper {
-  margin: 0;
-  padding-bottom: 24px;
+.hotel-hero-swiper {
+  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-swiper .swiper-wrapper {
-    padding-bottom: 40px;
+  .hotel-hero-swiper {
+    margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-swiper .swiper-wrapper {
-    padding-bottom: 0;
+  .hotel-hero-swiper {
+    margin-bottom: 0;
   }
 }
 
@@ -173,9 +185,9 @@ bottom: 48px;
 
 @media screen and (min-width: 1440px) {
   .hero-hotel .slider-btns {
-position: absolute;
-bottom: 30px;
-right: calc(50% - 119px);
+    position: absolute;
+    bottom: 30px;
+    right: calc(50% - 119px);
   }
 }
 
