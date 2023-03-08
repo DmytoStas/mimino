@@ -144,7 +144,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-            gap: 70px;
+            gap: 100px 0;
 
             min-width: 633px;
         }
@@ -152,6 +152,37 @@
      .amenities-list-item:first-child {
          margin-top: 40px;
      }
+
+     .amen-facil-item {
+        flex-basis: calc(100% / 2)
+    }
+
+        /* IMG POZITION */
+
+    .amen-img-list {
+        display: flex;
+        position: relative;
+        justify-content: end;
+        margin-top: 64px;
+    }
+
+    .amen-img-item:last-child {
+         position: absolute;
+        right: 409px;
+        bottom: 32%;}
+
+    /* BTN POZITION */
+    .amen-img-btn-wrapper {
+        position: relative;
+     }
+                
+    .amen-facil .main-btn {
+        position: absolute;
+        left: 540px;
+        bottom: 100px;
+    }
+ 
+
 }
 
 
