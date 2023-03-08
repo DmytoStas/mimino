@@ -3,10 +3,10 @@
   <div class="container">
     <h2 class="section-title" hidden>About a complex</h2>
 
-    <ul class="hotel-img-list">
+    <ul class="hotel-img-list about">
       <li class="hotel-img-item">
         <!-- Tablet/Desktop screen -->
-        <picture>
+        <picture class="first-pic">
           <source
             media="(min-width: 768px)"
             srcset="
@@ -49,7 +49,7 @@
           />
         </picture>
 
-        <picture>
+        <picture class="second-pic">
           <!-- Desktop screen -->
           <source
             media="(min-width: 1440px)"
@@ -110,7 +110,7 @@
             loading="lazy"
           />
         </picture>
-
+        <div class="section-description">
         <h3 class="section-subtitle">restaurant-hotel complex</h3>
         <p class="section-text">
           Indulge in a taste of luxury with every bite at Hotel Mimino. From the
@@ -122,17 +122,15 @@
           Treat yourself to a taste of the good life and come dine with us
           today!
         </p>
-
-        <div class="rating-mark">
-          <p class="rating-name">Maria</p>
-          <p class="rating-text">
-            give rating <span class="rating-point">4.5</span>
+        </div>
+        <div class="rating-mark maria">
+          <span class="rating-point">Maria</span>
+              <p class="rating-text">give rating <span class="rating-point">4.5</span></p>
           </p>
         </div>
       </li>
-
       <li class="hotel-img-item">
-        <picture>
+        <picture class="first-pic">
           <!-- Tablet/Desktop screen -->
           <source
             media="(min-width: 768px)"
@@ -175,8 +173,8 @@
             loading="lazy"
           />
         </picture>
-
-        <picture>
+        <div class="pic-box">
+        <picture class="second-pic">
           <!-- Tablet/Desktop screen -->
           <source
             media="(min-width: 768px)"
@@ -220,17 +218,19 @@
           />
         </picture>
 
-        <h3 class="section-subtitle">business class hotel</h3>
-        <p class="section-text">
+        <div class="section-description">
+          <h3 class="section-subtitle">business class hotel</h3>
+          <p class="section-text">
           The Mimino hotel features spacious and stylish double luxury rooms
           with modern amenities for a comfortable stay.
-        </p>
-
-        <div class="rating-mark">
-          <p class="rating-name">Alexander</p>
-          <p class="rating-text">
-            give rating <span class="rating-point">5.5</span>
           </p>
+        </div>
+
+        <div class="rating-mark alexandr">
+          <span class="rating-point">Alexander</span>
+              <p class="rating-text">give rating <span class="rating-point">5.5</span></p>
+          </p>
+        </div>
         </div>
       </li>
     </ul>
