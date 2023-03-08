@@ -1,5 +1,5 @@
-  <!-- Modal book a table -->
-<div class="modal modal-table" data-modal="1" hidden>
+<!-- Modal book a table -->
+<div class="modal modal-table" data-modal="1">
   <h2 class="modal-title">BOOK <i>A TABLE</i></h2>
 
   <svg class="close-icon js-modal-close">
@@ -9,21 +9,22 @@
   <form class="table-booking-form" name="table_booking_form" autocomplete="off">
     <div class="labels-wrapper field-set field-set-table">
       <label class="modal-label">
-        <input class="input-field"
+        <input
+          class="input-field"
           type="text"
           name="table_person_name"
           placeholder="YOUR NAME"
           minlength="2"
           pattern="[A-Za-z]{1,32}"
-          title="Only latin letters" 
+          title="Only latin letters"
           required
         />
         <span class="label-desc">Who should book a table for?</span>
       </label>
 
       <label class="modal-label">
-        <select  class="input-field" name="people_number" required>
-          <option selected value="" hidden>NUMBER OF PEOPLE</option>
+        <select class="input-field" name="people_number" required>
+          <option selected value="">NUMBER OF PEOPLE</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -41,7 +42,8 @@
       </label>
 
       <label class="modal-label order-label rel">
-        <input class="input-field"
+        <input
+          class="input-field"
           type="text"
           value="TODAY"
           id="book-date"
@@ -55,7 +57,8 @@
       </label>
 
       <label class="modal-label">
-        <input class="input-field"
+        <input
+          class="input-field"
           type="tel"
           name="table_phone_number"
           placeholder="+ 38 ()"
@@ -85,7 +88,8 @@
   <form class="room-booking-form" name="room_booking_form" autocomplete="off">
     <div class="labels-wrapper field-set field-set-room">
       <label class="modal-label">
-        <input class="input-field"
+        <input
+          class="input-field"
           type="text"
           name="table_person_name"
           placeholder="YOUR NAME"
@@ -94,11 +98,12 @@
           title="Only latin letters"
           required
         />
-        <span class="label-desc">Who should book a table for?</span>
+        <span class="label-desc">Who should book a room for?</span>
       </label>
 
       <label class="modal-label">
-        <input class="input-field"
+        <input
+          class="input-field"
           type="tel"
           name="table_phone_number"
           placeholder="+ 38 ()"
@@ -112,7 +117,8 @@
       </label>
 
       <label class="modal-label rel">
-        <input class="input-field"
+        <input
+          class="input-field"
           type="text"
           value="TODAY"
           id="from-date"
@@ -121,12 +127,13 @@
         />
         <span class="label-desc">Check in date</span>
         <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg>
+          <use href="/img/sprite.svg#chevron-down"></use>
+        </svg>
       </label>
 
       <label class="modal-label">
-        <input class="input-field"
+        <input
+          class="input-field"
           type="text"
           id="to-date"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
@@ -134,10 +141,10 @@
         />
         <span class="label-desc">Check out date</span>
         <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg>
+          <use href="/img/sprite.svg#chevron-down"></use>
+        </svg>
       </label>
-      
+
       <label class="modal-label">
         <select class="input-field" name="room_size">
           <option value="double-suite" selected>DOUBLE SUITE</option>
@@ -146,8 +153,8 @@
         </select>
         <span class="label-desc">Number category</span>
         <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg>
+          <use href="/img/sprite.svg#chevron-down"></use>
+        </svg>
       </label>
     </div>
 
@@ -157,7 +164,7 @@
 </div>
 
 <!-- Modal price per room -->
-<div class="modal modal-price" data-modal="3" >
+<div class="modal modal-price" data-modal="3">
   <h2 class="modal-title">PRICES PER <i>ROOM</i></h2>
 
   <h3 class="modal-subtitle">Double suite</h3>
@@ -166,7 +173,11 @@
     <use href="/img/sprite.svg#x-close"></use>
   </svg>
 
-  <form class="price-per-room-form" name="price_per_room_form" autocomplete="off">
+  <form
+    class="price-per-room-form"
+    name="price_per_room_form"
+    autocomplete="off"
+  >
     <div class="labels-wrapper field-set field-set-price">
       <label class="modal-label">
         <select class="input-field" name="number_of_nights" id="nightsSelected">
@@ -180,12 +191,13 @@
         </select>
         <span class="label-desc">Number of nights</span>
         <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg>
+          <use href="/img/sprite.svg#chevron-down"></use>
+        </svg>
       </label>
 
       <label class="modal-label mobile-label rel">
-        <input class="input-field mob-label"
+        <input
+          class="input-field mob-label"
           type="text"
           value="TODAY"
           id="check-date"
@@ -194,12 +206,19 @@
         />
         <span class="label-desc mob-label">Check in date</span>
         <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg>
+          <use href="/img/sprite.svg#chevron-down"></use>
+        </svg>
       </label>
 
       <label class="modal-label">
-        <input class="input-field tab-desc-label" type="text" value="1000" name="room_price" disabled id="price"/>
+        <input
+          class="input-field tab-desc-label"
+          type="text"
+          value="1000"
+          name="room_price"
+          disabled
+          id="price"
+        />
         <span class="label-desc tab-desc-label">UAH</span>
       </label>
     </div>
@@ -210,25 +229,13 @@
 </div>
 
 <div class="overlay js-overlay-modal"></div>
-<!--
-  FOR OTHER MASK
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></!->
-<script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
--->
 
 <script src="https://cdn.jsdelivr.net/npm/imask@6.4.3/dist/imask.min.js"></script>
 
-<script
-  type="module"
-  src="http://code.jquery.com/jquery-1.7.2.min.js"
-></script>
-<script
-  type="module"
-  src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"
-></script>
-
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 <script src="../js/modals.js"></script>
-<script type="module" src="../js/datepicker.js"></script>
+<script src="../js/datepicker.js"></script>
 <script src="../js/multiprice.js"></script>
 <script src="../js/phone-mask.js"></script>

@@ -1,244 +1,253 @@
 .overlay {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    background-color: var(--backdrop-bg-40);
-    transition: opacity 400ms ease, visibility 400ms ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop-bg-40);
+  transition: opacity 400ms ease, visibility 400ms ease;
 }
 .modal {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 
-    position: fixed;
-    z-index: 1001;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    padding: 24px 24px 40px;
-    border-radius: 2px;
-    background: var(--main-black-bg);
-    color: var(--modal-white-txt-cl);
-    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+  position: fixed;
+  z-index: 1001;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  padding: 24px 24px 40px;
+  border-radius: 2px;
+  background: var(--main-black-bg);
+  color: var(--modal-white-txt-cl);
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
 }
-@media screen and (min-width:375px) {
-    .modal {
-        width: 335px;
-    }
-    .modal-price {
-        min-height: 414px;
-    }
+@media screen and (min-width: 375px) {
+  .modal {
+    width: 335px;
+  }
+  .modal-price {
+    min-height: 414px;
+  }
 }
-@media screen and (min-width:768px){
-    .modal {
-        width: 628px;
-        padding: 32px 32px 60px;
-    }
-    .modal-price {
-        height: 430px;
-    }
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 628px;
+    padding: 32px 32px 60px;
+  }
+  .modal-price {
+    height: 430px;
+  }
 }
 
 .modal.active,
-.overlay.active{
-   opacity: 1;
-   visibility: visible;
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
-.close-icon {
-    position: absolute;
-    height: 28px;
-    width: 28px;
-    top: 14px;
-    right: 14px;
-    border-radius: 6px;
-    stroke: var(--modal-white-txt-cl);
-    transition: background-color var(--main-transition), transform var(--main-transition);
+.modal .close-icon {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  top: 14px;
+  right: 14px;
+  border-radius: 6px;
+  stroke: var(--modal-white-txt-cl);
+  transition: background-color var(--main-transition),
+    transform var(--main-transition);
 }
-.close-icon:hover, .close-icon:focus {
-    background-color: var(--gray-txt-cl);
-    transform: scale(1.1);
-    border: none;
-    outline: none;
+.modal .close-icon:hover,
+.modal .close-icon:focus {
+  background-color: var(--gray-txt-cl);
+  transform: scale(1.1);
+  border: none;
+  outline: none;
 }
 .modal-title {
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 1.36;
-    margin-bottom: 40px;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.36;
+  margin-bottom: 40px;
 }
 .modal-subtitle {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.12;
-    letter-spacing: -0.02em;
-    color: var(--main-white-txt-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: var(--main-white-txt-cl);
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
-@media screen and (min-width:768px) {
-    .modal-subtitle {
-        margin-bottom: 32px;
-    }
-    .modal-title {
-        font-size: 36px;
-        line-height: 1.11;
-        margin-bottom: 60px;
-    }
+@media screen and (min-width: 768px) {
+  .modal-subtitle {
+    margin-bottom: 32px;
+  }
+  .modal-title {
+    font-size: 36px;
+    line-height: 1.11;
+    margin-bottom: 60px;
+  }
 }
-input, input::placeholder, select {
+input,
+input::placeholder,
+select {
+  display: block;
+  color: var(--modal-white-txt-cl);
+  width: 95%;
+  height: 36px;
+  padding-bottom: 18px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  transition: border-color var(--main-transition);
+}
+@media screen and (min-width: 375px) {
+  input,
+  select {
     display: block;
     color: var(--modal-white-txt-cl);
-    width: 95%;
+    width: 287px;
     height: 36px;
-    padding-bottom: 18px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-
-    transition: border-color var(--main-transition);
+  }
 }
-@media screen and (min-width: 375px){
-   input, select {
-        display: block;
-        color: var(--modal-white-txt-cl);
-        width: 287px;
-        height: 36px;
-    } 
-}
-@media screen and (min-width:768px) {
-    /*input, select {
+@media screen and (min-width: 768px) {
+  /*input, select {
         width: 266px;
     } */
 }
 input::placeholder {
-    color: var(--modal-white-txt-cl);
-    margin-bottom: 18px;
-    
+  color: var(--modal-white-txt-cl);
+  margin-bottom: 18px;
 }
-select option { 
-    color: black; 
+select option {
+  color: black;
 }
 
 .modal-label:not(:last-child) {
-    display: block;
-    margin-bottom: 32px;
-   
+  display: block;
+  margin-bottom: 32px;
 }
 .modal-label {
-    position: relative;
+  position: relative;
 }
-.modal-label.rel>.input-field {
-    cursor: default;
+.modal-label.rel > .input-field {
+  cursor: default;
 }
 .labels-wrapper {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .modal-label.mobile-label {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .label-desc {
-    display: block;
-    height: 12px;
-    font-size: 8px;
-    line-height: 1.5;
-    letter-spacing: 0.18em;
-    margin-top: 8px;
-    color: var(--second-white-txt-cl);
+  display: block;
+  height: 12px;
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  margin-top: 8px;
+  color: var(--second-white-txt-cl);
 }
-@media screen and (min-width:768px) {
-    .field-set {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .field-set-price {
-        column-gap: 16px;
-    }
-    .field-set-room, .field-set-table{
-        column-gap: 32px;
-        row-gap: 40px;
-    }
-    .modal-label:last-child {
-        left: 0;
-    }
-    
-    /*.field-set-item {
+@media screen and (min-width: 768px) {
+  .modal-label.mobile-label {
+    display: none;
+  }
+  .field-set {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .field-set-price {
+    column-gap: 16px;
+  }
+  .field-set-room,
+  .field-set-table {
+    column-gap: 32px;
+    row-gap: 40px;
+  }
+  .modal-label:last-child {
+    left: 0;
+  }
+
+  /*.field-set-item {
         display: flex;
         flex-direction: column;
     }*/
-    input, select {
-        width: 266px;
-    }
-    .modal-label:not(:last-child) {
-        margin-bottom: 0;
-    }
-    .labels-wrapper {
-        margin-bottom: 80px;
-    }
+  input,
+  select {
+    width: 266px;
+  }
+  .modal-label:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .labels-wrapper {
+    margin-bottom: 80px;
+  }
 }
 .tab-desc-label {
-    display: none;
+  display: none;
 }
 
-@media screen and (min-width:768px){
-    .tab-desc-label {
-        display: block;
-    }
-    .mob-label {
-        display: none;
-    }
-    .order-label {
-        order: 1;
-    }
+@media screen and (min-width: 768px) {
+  .tab-desc-label {
+    display: block;
+  }
+  .mob-label {
+    display: none;
+  }
+  .order-label {
+    order: 1;
+  }
 }
 .input-field {
-    background-color: transparent;
-    border: none;
-    border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
 }
 .input-field:focus {
-    outline: none;
-    border: none;
-    border-bottom: 0.8px solid var(--modal-white-txt-cl);
+  outline: none;
+  border: none;
+  border-bottom: 0.8px solid var(--modal-white-txt-cl);
 }
 
-input:not(:focus):valid, select:not(:focus):valid, input:disabled {
-    border: none;
-    border-bottom: 0.8px solid var(--modal-white-txt-cl);
+input:not(:focus):valid,
+select:not(:focus):valid,
+input:disabled {
+  border: none;
+  border-bottom: 0.8px solid var(--modal-white-txt-cl);
 }
 select {
-    appearance: none;
+  appearance: none;
 }
 .select-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    pointer-events: none;
-    stroke: var(--main-white-txt-cl);
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+  stroke: var(--main-white-txt-cl);
 }
 
 .modal-btn {
-    color: var(--modal-white-txt-cl);
-    border-color: var(--modal-white-txt-cl);
-    
-    padding: 14px 48px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 46px;
+  color: var(--modal-white-txt-cl);
+  border-color: var(--modal-white-txt-cl);
+
+  padding: 14px 48px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 46px;
 }
 @media screen and (min-width: 768px) {
-    .modal-btn {
-        padding: 14px 130px;
-        height: 52px;
-    }
-    
+  .modal-btn {
+    padding: 14px 130px;
+    height: 52px;
+  }
 }
