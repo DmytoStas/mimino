@@ -12,7 +12,6 @@ const swiperRestMainPg = new Swiper('.restaurant-swiper', {
   breakpoints: {
     768: {
       spaceBetween: 32,
-      slidesPerView: 2,
     },
     1440: {
       spaceBetween: 32,
@@ -42,4 +41,42 @@ const swiperHotelMainPg = new Swiper('.hotel-swiper', {
   },
 });
 
-export { swiperRestMainPg, swiperHotelMainPg };
+const swiperResMunuRestPg = new Swiper('.rest-pg-swiper', {
+  modules: [Navigation],
+  uniqueNavElements: true,
+  setWrapperSize: true,
+  speed: 300,
+  spaceBetween: 32,
+  slidesPerView: 1,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-btn-next',
+    prevEl: '.slider-btn-prev',
+  },
+});
+
+const swiperHotelPgHero = new Swiper('.hotel-hero-swiper', {
+  modules: [Navigation],
+  setWrapperSize: true,
+  uniqueNavElements: true,
+  speed: 300,
+  spaceBetween: 20,
+  slidesPerView: 1.39,
+  breakpoints: {
+    768: {
+      spaceBetween: 32,
+      slidesPerView: 1.64,
+    },
+    1440: {
+      spaceBetween: 32,
+      slidesPerView: 1.57,
+      grabCursor: true,
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-btn-next',
+    prevEl: '.slider-btn-prev',
+  },
+});

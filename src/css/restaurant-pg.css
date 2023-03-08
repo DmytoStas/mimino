@@ -10,7 +10,11 @@
 @import url('./common/main-btn.css');
 @import url('./common/slider-btns.css');
 
-/* Main page */
+/* Restaurant page */
+@import url('./header-white.css');
+@import url('./restaurant-page/about-a-kitchen.css');
+@import url('./restaurant-page/restaurant-menu.css');
+@import url('./footer.css');
 
 :root {
   --main-dark-txt-cl: #121212;

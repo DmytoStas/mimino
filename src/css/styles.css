@@ -4,14 +4,21 @@
   | default @import url()
   |============================
 */
+
 @import url('./common/body.css');
 @import url('./common/reset.css');
 @import url('./common/utils.css');
 @import url('./common/main-btn.css');
 @import url('./common/slider-btns.css');
 
-/* Room page */
-@import url('./header-white.css');
+/* Main page */
+@import url('./home-page/header-home.css');
+@import url('./home-page/hero.css');
+@import url('./home-page/about-complex.css');
+@import url('./home-page/restaurant.css');
+@import url('./home-page/welcome.css');
+@import url('./home-page/hotel.css');
+@import url('./home-page/location.css');
 @import url('./footer.css');
 
 :root {
