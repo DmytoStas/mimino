@@ -55,7 +55,7 @@ const swiperResMunuRestPg = new Swiper('.rest-pg-swiper', {
   },
 });
 
-const swiperHotelPgHero = new Swiper('.hotel-hero-swiper', {
+const swiperHotelPgHero = new Swiper('.hero-swiper', {
   modules: [Navigation],
   setWrapperSize: true,
   uniqueNavElements: true,
