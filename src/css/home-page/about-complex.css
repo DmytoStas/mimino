@@ -3,30 +3,30 @@
     |  About-complex-section
     |============================
   */
-
+/* 
 .about-complex {
   padding-bottom: 64px;
-}
+} */
 
-.about.hotel-img-list {
+.about.about-img-list {
   display: flex;
   flex-flow: column;
   gap: 64px;
 }
 
 @media screen and (min-width: 768px) {
-  .hotel-img-list {
+  .about-complex .about-img-list {
     gap: 80px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hotel-img-list {
+  .about-complex .about-img-list {
     gap: 100px;
   }
 }
 
-.hotel-img-list .hotel-img-item {
+.about-img-list .about-img-item {
   position: relative;
 }
 
@@ -51,93 +51,91 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hotel-img-list .hotel-img-item:nth-child(1) .section-description {
+  .about-img-list .about-img-item:nth-child(1) .section-description {
     font-size: 18px;
     line-height: 1.33;
   }
 }
 
-.hotel-img-list .hotel-img-item:nth-child(2) .section-description {
+.about-img-list .about-img-item:nth-child(2) .section-description {
   max-width: 263px;
 }
 
 @media screen and (max-width: 767.98px) {
-  .hotel-img-list .hotel-img-item:nth-child(1) > .first-pic {
+  .about-img-list .about-img-item:nth-child(1) > .first-pic {
     display: block;
     margin-bottom: 20px;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(2) {
+  .about-img-list .about-img-item:nth-child(2) {
     display: flex;
     flex-flow: column;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(2) > .pic-box {
+  .about-img-list .about-img-item:nth-child(2) > .pic-box {
     display: flex;
     flex-flow: column-reverse;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(2) > .first-pic {
+  .about-img-list .about-img-item:nth-child(2) > .first-pic {
     margin-bottom: 54px;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(2) .section-description {
+  .about-img-list .about-img-item:nth-child(2) .section-description {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hotel-img-list .hotel-img-item:nth-child(1) > .second-pic {
+  .about-img-list .about-img-item:nth-child(1) > .second-pic {
     position: absolute;
     top: 209px;
     left: 300px;
     z-index: 1;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(1) .section-description {
+  .about-img-list .about-img-item:nth-child(1) .section-description {
     max-width: 472px;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(2) > .first-pic {
+  .about-img-list .about-img-item:nth-child(2) > .first-pic {
     display: flex;
     justify-content: end;
     margin-bottom: 40px;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(2) > .pic-box {
+  .about-img-list .about-img-item:nth-child(2) > .pic-box {
     display: flex;
     gap: var(--main-gap);
   }
 }
 
-
-
 @media screen and (max-width: 1439.98px) {
-  .hotel-img-list .hotel-img-item:nth-child(1) .section-description {
+  .about-img-list .about-img-item:nth-child(1) .section-description {
     margin-top: 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hotel-img-list .hotel-img-item {
+  .about-img-list .about-img-item {
     display: flex;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(1) {
+  .about-img-list .about-img-item:nth-child(1) {
     gap: 364px;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(1) .section-description {
+  .about-img-list .about-img-item:nth-child(1) .section-description {
     max-width: 473px;
     padding-top: 199px;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(2) {
+  .about-img-list .about-img-item:nth-child(2) {
     flex-flow: row-reverse;
     gap: 87px;
   }
 
-  .hotel-img-list .hotel-img-item:nth-child(2) > .pic-box {
+  .about-img-list .about-img-item:nth-child(2) > .pic-box {
     gap: 54px;
     padding-top: 127px;
   }
