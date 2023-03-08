@@ -24,12 +24,12 @@
 .footer .container {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 @media screen and (min-width: 1440px) {
   .footer .container {
-    margin-bottom: 80px;    
+    padding-bottom: 80px;
   }
 }
 
@@ -41,8 +41,8 @@
 
 @media screen and (min-width: 1440px) {
   .footer .nav {
-    display: flex;   
-    margin-right: 370px; 
+    display: flex;
+    margin-right: 370px;
   }
 }
 
@@ -65,7 +65,7 @@
 
 @media screen and (min-width: 1440px) {
   .footer .logo {
-    align-items: center;   
+    align-items: center;
   }
 }
 
