@@ -55,7 +55,7 @@ const swiperHeroRoomPg = new Swiper('.hero-room-swiper', {
     },
     1440: {
       spaceBetween: 32,
-      slidesPerView: 1.5,
+      slidesPerView: 1.6,
       grabCursor: true,
     },
   },
