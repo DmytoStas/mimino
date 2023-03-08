@@ -8,7 +8,7 @@
     z-index: 1000;
     width: 100%;
     height: 100%;
-    background-color: rgba(188, 188, 189, 0.438);
+    background-color: var(--backdrop-bg-40);
     transition: opacity 400ms ease, visibility 400ms ease;
 }
 .modal {
@@ -92,11 +92,18 @@
         margin-bottom: 60px;
     }
 }
-input, select {
+input, input::placeholder, select {
     display: block;
     color: var(--modal-white-txt-cl);
     width: 95%;
     height: 36px;
+    padding-bottom: 18px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 
     transition: border-color var(--main-transition);
 }
@@ -116,6 +123,7 @@ input, select {
 input::placeholder {
     color: var(--modal-white-txt-cl);
     margin-bottom: 18px;
+    
 }
 select option { 
     color: black; 
@@ -125,6 +133,12 @@ select option {
     display: block;
     margin-bottom: 32px;
    
+}
+.modal-label {
+    position: relative;
+}
+.modal-label.rel>.input-field {
+    cursor: default;
 }
 .labels-wrapper {
     margin-bottom: 40px;
@@ -200,6 +214,16 @@ select option {
 input:not(:focus):valid, select:not(:focus):valid, input:disabled {
     border: none;
     border-bottom: 0.8px solid var(--modal-white-txt-cl);
+}
+select {
+    appearance: none;
+}
+.select-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    stroke: var(--main-white-txt-cl);
 }
 
 .modal-btn {
