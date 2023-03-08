@@ -18,7 +18,7 @@
 
 .amenities-list-item {
     list-style: disc;
-    list-style-position:inside;
+    margin-left: 20px;
 }
 
 /* =================
