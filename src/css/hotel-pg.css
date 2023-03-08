@@ -12,6 +12,8 @@
 
 /* Hotel page */
 
+@import url('./hotel-page/hotel-room.css');
+
 :root {
   --main-dark-txt-cl: #121212;
   --second-dark-txt-cl: #000;
