@@ -12,6 +12,7 @@
 
 /* Hotel page */
 @import url('./header-white.css');
+@import url('./hotel-page/hero-hotel.css');
 
 :root {
   --main-dark-txt-cl: #121212;
