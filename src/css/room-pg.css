@@ -11,6 +11,7 @@
 @import url('./common/slider-btns.css');
 
 /* Room page */
+@import url('./room-page/amenities.css');
 
 :root {
   --main-dark-txt-cl: #121212;

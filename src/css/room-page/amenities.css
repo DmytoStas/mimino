@@ -1,0 +1,158 @@
+.amen-facil{
+    background-color: var(--main-black-bg);
+}
+
+.amen-facil .main-btn{
+    color: var(--main-white-txt-cl);
+    border: 0.8px solid var(--main-white-txt-cl);
+}
+
+.amen-facil .main-btn:hover,
+.amen-facil .main-btn:focus {
+    color: var(--main-black-bg);
+
+    background: var(--white-hov-foc);
+}
+
+.amenities-list-item {
+    list-style: disc;
+    list-style-position:inside;
+}
+
+/* =================
+    TEXT STYLES
+================== */
+.amen-facil .section-subtitle{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.10;
+    letter-spacing: -0.02em;
+
+    color: var(--main-white-txt-cl);
+}
+
+.amenities-list-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+
+    color: var(--main-white-txt-cl);
+}
+
+/* ====================
+    MOBILE STYLES
+==================== */
+
+@media screen and (max-width: 767.98px) {
+
+    /* TEXT STYLES */
+
+    .amen-facil .section-subtitle{
+        font-size: 28px;
+        line-height: 1.14;
+    }
+
+    .amenities-list-item {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    /* BLOCK POZITION */
+
+    .amen-facil-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    
+    .amenities-list-item:first-child {
+        margin-top: 28px;
+    }
+    
+    .amenities-list-item {
+        max-width: 335px;
+    }
+
+    /* IMAGE POZITION */
+
+    .amen-img-list {
+        display: flex;
+        position: relative;
+        justify-content: end;
+        margin-top: 64px;
+    }
+    
+    .amen-img-item:last-child {
+        position: absolute;
+        left: 20px;
+        top: 145px;
+    }
+
+    /* BTN POZITION */
+
+    .amen-facil .main-btn{
+        margin-top: 32px;
+
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439.98px){
+    /* BLOCK POZITION */
+    .amen-facil-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .amenities-list-item:first-child {
+        margin-top: 40px;
+    }
+
+    /* IMG POZITION */
+
+    .amen-img-list {
+        display: flex;
+        position: relative;
+        justify-content: end;
+        margin-top: 64px;
+    }
+        
+    .amen-img-item:last-child {
+        position: absolute;
+        left: 20px;
+        top: 168px;
+    }
+
+        /* BTN POZITION */
+    .amen-img-btn-wrapper{
+        position: relative;
+    }
+
+    .amen-facil .main-btn {
+        position: absolute;
+        left: 20px;
+        bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    /* BLOCK POZITION */
+        .amen-facil-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 70px;
+
+            min-width: 633px;
+        }
+
+     .amenities-list-item:first-child {
+         margin-top: 40px;
+     }
+}
+
+
+
