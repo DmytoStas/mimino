@@ -18,6 +18,7 @@
 @import url('./home-page/welcome.css');
 @import url('./home-page/hotel.css');
 @import url('./home-page/location.css');
+@import url('./footer.css');
 
 :root {
   --main-dark-txt-cl: #121212;
