@@ -18,7 +18,7 @@
     
     <script type="module" crossorigin src="/team-8-html/assets/header-e217ea2b.js"></script>
     <link rel="stylesheet" href="/team-8-html/assets/header-1043c9c1.css">
-    <link rel="stylesheet" href="/team-8-html/assets/room-pg-044ad6aa.css">
+    <link rel="stylesheet" href="/team-8-html/assets/room-pg-d24db5e3.css">
   </head>
   <body>
     <!-- Header -->
@@ -67,7 +67,11 @@
       </nav>
 
       <!-- Logo -->
-      <a class="logo" href="" rel="noopener nofollow noreferrer">
+      <a
+        class="logo"
+        href="../../index.html"
+        rel="noopener nofollow noreferrer"
+      >
         <span class="accent">Mimino</span> restaurant-hotel complex
       </a>
       <!-- Social media -->
@@ -202,7 +206,9 @@
   <div class="container">
     <h1 class="hero-title">DOUBLE LUXURY ROOM</h1>
 
-    <button class="main-btn" type="button">View prices</button>
+    <button class="main-btn js-open-modal" type="button" data-modal="3">
+      View prices
+    </button>
 
     <!-- Slider main container -->
     <div class="swiper">
@@ -665,7 +671,9 @@
       />
     </picture>
 
-    <button class="main-btn" type="button">Book a room</button>
+    <button class="main-btn js-open-modal" type="button" data-modal="2">
+      Book a room
+    </button>
   </div>
 </section>
 
@@ -705,7 +713,7 @@
     </nav>
 
     <!-- Logo -->
-    <a class="logo" href="" rel="noopener nofollow noreferrer">
+    <a class="logo" href="../index.html" rel="noopener nofollow noreferrer">
       <span class="accent">Mimino</span> restaurant-hotel complex
     </a>
 
@@ -760,16 +768,17 @@
     <!-- Modals -->
     <!-- Modal book a table -->
 <div class="modal modal-table" data-modal="1">
-  <h2>BOOK <i>A TABLE</i></h2>
+  <h2 class="modal-title">BOOK <i>A TABLE</i></h2>
 
   <svg class="close-icon js-modal-close">
     <use href="/team-8-html/assets/sprite-39be307f.svg#x-close"></use>
   </svg>
 
-  <form name="table_booking_form">
-    <div>
-      <label>
+  <form class="table-booking-form" name="table_booking_form" autocomplete="off">
+    <div class="labels-wrapper field-set field-set-table">
+      <label class="modal-label">
         <input
+          class="input-field"
           type="text"
           name="table_person_name"
           placeholder="YOUR NAME"
@@ -778,12 +787,12 @@
           title="Only latin letters"
           required
         />
-        <p>Who should book a table for?</p>
+        <span class="label-desc">Who should book a table for?</span>
       </label>
 
-      <label>
-        <select name="people_number" required>
-          <option selected hidden>NUMBER OF PEOPLE</option>
+      <label class="modal-label">
+        <select class="input-field" name="people_number" required>
+          <option selected value="">NUMBER OF PEOPLE</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -800,51 +809,55 @@
         </svg> -->
       </label>
 
-      <label>
+      <label class="modal-label order-label rel">
         <input
+          class="input-field"
           type="text"
           value="TODAY"
+          id="book-date"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
           maxlength="10"
         />
-        <p>What date to book?</p>
-        <!-- <svg class="select-icon" width="20" height="20">
-          <use href="/img/sprite.svg#chevron-down"></use>
-        </svg> -->
+        <span class="label-desc">What date to book?</span>
+        <svg class="select-icon" width="20" height="20">
+          <use href="/team-8-html/assets/sprite-39be307f.svg#chevron-down"></use>
+        </svg>
       </label>
 
-      <label>
+      <label class="modal-label">
         <input
+          class="input-field"
           type="tel"
           name="table_phone_number"
           placeholder="+ 38 ()"
-          minlength="10"
-          maxlength="10"
-          autocomplete="off"
+          minlength="19"
+          maxlength="20"
+          id="phoneNumber"
           pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
           required
         />
-        <p>Phone number</p>
+        <span class="label-desc">Phone number</span>
       </label>
     </div>
 
     <!-- Modal button -->
-    <button class="main-btn" type="submit">MAKE A RESERVATION</button>
+    <button class="main-btn modal-btn" type="submit">MAKE A RESERVATION</button>
   </form>
 </div>
 
 <!-- Modal book a room -->
 <div class="modal modal-room" data-modal="2">
-  <h2>BOOK <i>A ROOM</i></h2>
+  <h2 class="modal-title">BOOK <i>A ROOM</i></h2>
 
   <svg class="close-icon js-modal-close">
     <use href="/team-8-html/assets/sprite-39be307f.svg#x-close"></use>
   </svg>
 
-  <form name="room_booking_form">
-    <div>
-      <label>
+  <form class="room-booking-form" name="room_booking_form" autocomplete="off">
+    <div class="labels-wrapper field-set field-set-room">
+      <label class="modal-label">
         <input
+          class="input-field"
           type="text"
           name="table_person_name"
           placeholder="YOUR NAME"
@@ -853,77 +866,89 @@
           title="Only latin letters"
           required
         />
-        <p>Who should book a table for?</p>
+        <span class="label-desc">Who should book a room for?</span>
       </label>
-      <label>
+
+      <label class="modal-label">
         <input
+          class="input-field"
           type="tel"
           name="table_phone_number"
           placeholder="+ 38 ()"
-          minlength="10"
-          maxlength="10"
-          autocomplete="off"
+          minlength="19"
+          maxlength="20"
+          id="phoneNumber2"
           pattern="\+ [0-9]{2} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
           required
         />
-        <p>Phone number</p>
+        <span class="label-desc">Phone number</span>
       </label>
-      <label>
+
+      <label class="modal-label rel">
         <input
+          class="input-field"
           type="text"
           value="TODAY"
+          id="from-date"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
           maxlength="10"
         />
-        <p>Check in date</p>
-        <!-- <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg> -->
+        <span class="label-desc">Check in date</span>
+        <svg class="select-icon" width="20" height="20">
+          <use href="/team-8-html/assets/sprite-39be307f.svg#chevron-down"></use>
+        </svg>
       </label>
-      <label>
+
+      <label class="modal-label">
         <input
+          class="input-field"
           type="text"
-          value="25/04/2023"
+          id="to-date"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
           maxlength="10"
         />
-        <p>Check out date</p>
-        <!-- <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg> -->
+        <span class="label-desc">Check out date</span>
+        <svg class="select-icon" width="20" height="20">
+          <use href="/team-8-html/assets/sprite-39be307f.svg#chevron-down"></use>
+        </svg>
       </label>
-      <label>
-        <select name="room_size">
+
+      <label class="modal-label">
+        <select class="input-field" name="room_size">
           <option value="double-suite" selected>DOUBLE SUITE</option>
           <option value="triple">TRIPLE ROOM</option>
           <option value="Four-seater">FOUR-SEATER ROOM</option>
         </select>
-        <p>Number category</p>
-        <!-- <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg> -->
+        <span class="label-desc">Number category</span>
+        <svg class="select-icon" width="20" height="20">
+          <use href="/team-8-html/assets/sprite-39be307f.svg#chevron-down"></use>
+        </svg>
       </label>
     </div>
 
     <!-- Modal button -->
-    <button class="main-btn" type="submit">MAKE A RESERVATION</button>
+    <button class="main-btn modal-btn" type="submit">MAKE A RESERVATION</button>
   </form>
 </div>
 
 <!-- Modal price per room -->
-<div class="modal" data-modal="3">
-  <h2>PRICES PER<i>ROOM</i></h2>
+<div class="modal modal-price" data-modal="3">
+  <h2 class="modal-title">PRICES PER <i>ROOM</i></h2>
 
-  <h3>Double suite</h3>
+  <h3 class="modal-subtitle">Double suite</h3>
 
-  <svg class="js-modal-close">
+  <svg class="close-icon js-modal-close">
     <use href="/team-8-html/assets/sprite-39be307f.svg#x-close"></use>
   </svg>
 
-  <form name="prise_per_room_form">
-    <div>
-      <label>
-        <select name="number_of_nights">
+  <form
+    class="price-per-room-form"
+    name="price_per_room_form"
+    autocomplete="off"
+  >
+    <div class="labels-wrapper field-set field-set-price">
+      <label class="modal-label">
+        <select class="input-field" name="number_of_nights" id="nightsSelected">
           <option value="1" selected>1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -932,36 +957,63 @@
           <option value="6">6</option>
           <option value="7">7</option>
         </select>
-        <p>Number of nights</p>
-        <!-- <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg> -->
+        <span class="label-desc">Number of nights</span>
+        <svg class="select-icon" width="20" height="20">
+          <use href="/team-8-html/assets/sprite-39be307f.svg#chevron-down"></use>
+        </svg>
       </label>
-      <label>
+
+      <label class="modal-label mobile-label rel">
         <input
+          class="input-field mob-label"
           type="text"
           value="TODAY"
+          id="check-date"
           pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"
           maxlength="10"
         />
-        <p>Check in date</p>
-        <!-- <svg class="select-icon" width="20" height="20">
-            <use href="/img/sprite.svg#chevron-down"></use>
-          </svg> -->
+        <span class="label-desc mob-label">Check in date</span>
+        <svg class="select-icon" width="20" height="20">
+          <use href="/team-8-html/assets/sprite-39be307f.svg#chevron-down"></use>
+        </svg>
       </label>
-      <label>
-        <input type="text" value="1000" name="room_price" disabled />
-        <p>UAH</p>
+
+      <label class="modal-label">
+        <input
+          class="input-field tab-desc-label"
+          type="text"
+          value="1000"
+          name="room_price"
+          disabled
+          id="price"
+        />
+        <span class="label-desc tab-desc-label">UAH</span>
       </label>
     </div>
 
     <!-- Modal button -->
-    <button class="main-btn" type="submit">MAKE A RESERVATION</button>
+    <button class="main-btn modal-btn" type="submit">MAKE A RESERVATION</button>
   </form>
 </div>
 
 <div class="overlay js-overlay-modal"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/imask@6.4.3/dist/imask.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<script src="../js/modals.js"></script>
+<script src="../js/datepicker.js"></script>
+<script src="../js/multiprice.js"></script>
+<script src="../js/phone-mask.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>
