@@ -229,12 +229,15 @@ input::placeholder {
   }
 }
 .modal .input-field {
-  width: 100%;
-
   color: inherit;
   background-color: var(--main-black-bg);
   border: none;
   border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+}
+@media screen and (max-width: 767.98px) {
+  .modal .input-field {
+    width: 100%;
+  }
 }
 
 .input-field:focus {
