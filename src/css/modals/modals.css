@@ -19,8 +19,8 @@
   z-index: 1001;
   top: 50%;
   left: 50%;
+  width: 80%;
   transform: translate(-50%, -50%) scale(1);
-  width: 95%;
   padding: 24px 24px 40px;
   border-radius: 2px;
   background: var(--main-black-bg);
@@ -119,6 +119,20 @@ select {
 
   transition: border-color var(--main-transition);
 }
+@media screen and (max-width: 374.98px) {
+  .modal-title {
+    font-size: 21px;
+  }
+  .modal-subtitle {
+    font-size: 16px;
+  }
+
+  input,
+  input::placeholder,
+  select {
+    font-size: 13px;
+  }
+}
 @media screen and (min-width: 375px) {
   input,
   select {
@@ -214,6 +228,8 @@ input::placeholder {
   }
 }
 .modal .input-field {
+  width: 100%;
+
   color: inherit;
   background-color: var(--main-black-bg);
   border: none;
@@ -247,14 +263,22 @@ select {
   color: var(--modal-white-txt-cl);
   border-color: var(--modal-white-txt-cl);
 
-  padding: 14px 48px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
   height: 46px;
 }
+@media screen and (min-width: 375px) {
+  .modal-btn {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal-btn {
-    padding: 14px 130px;
+    padding-left: 130px;
+    padding-right: 130px;
     height: 52px;
   }
 }
