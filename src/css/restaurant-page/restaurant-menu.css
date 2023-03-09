@@ -248,11 +248,11 @@
   margin-bottom: 3px;
 }
 
-.swiper-wrapper {
+.swiper-wrapper-menu {
   margin-bottom: 38px;
 }
 @media screen and (min-width: 768px) {
-  .swiper-wrapper {
+  .swiper-wrapper-menu {
     margin-bottom: var(--main-gap);
   }
 }
