@@ -137,9 +137,6 @@ input::placeholder {
   color: var(--modal-white-txt-cl);
   margin-bottom: 18px;
 }
-select option {
-  color: black;
-}
 
 .modal-label:not(:last-child) {
   display: block;
@@ -216,11 +213,13 @@ select option {
     order: 1;
   }
 }
-.input-field {
-  background-color: transparent;
+.modal .input-field {
+  color: inherit;
+  background-color: var(--main-black-bg);
   border: none;
   border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
 }
+
 .input-field:focus {
   outline: none;
   border: none;
