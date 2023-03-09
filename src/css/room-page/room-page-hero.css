@@ -5,6 +5,8 @@
 
   letter-spacing: -0.02em;
   margin-bottom: 24px;
+
+  animation: right-to-left 1s ease-in-out 500ms  alternate both;
 }
 @media screen and (min-width: 768px) {
   .hero-title {

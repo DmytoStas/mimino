@@ -23,7 +23,7 @@
 }
 
 .mobile-menu-open {
-  margin-right: 43px;
+  margin-right: calc(50% - 84px);
   line-height: 0;
   border: none;
   background-color: transparent;

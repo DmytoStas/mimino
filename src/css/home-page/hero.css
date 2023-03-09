@@ -79,6 +79,9 @@
   letter-spacing: -0.02em;
 
   color: var(--main-white-txt-cl);
+
+
+  animation: right-to-left 1s ease-in-out 500ms  alternate both;
 }
 
 @media screen and (min-width: 768px) {

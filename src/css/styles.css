@@ -69,3 +69,18 @@
   --z-index-hero-cont: 1;
   --z-index-rating-mark-block: 2;
 }
+
+  /* !animation */
+  @keyframes right-to-left {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    50% {
+    opacity: 0.6;  
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
