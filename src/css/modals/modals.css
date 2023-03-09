@@ -66,6 +66,7 @@
   top: 14px;
   right: 14px;
   border-radius: 6px;
+  cursor: pointer;
   stroke: var(--modal-white-txt-cl);
   transition: background-color var(--main-transition),
     transform var(--main-transition);
