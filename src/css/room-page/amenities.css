@@ -215,7 +215,7 @@ DESKTOP
     justify-content: flex-start;
     position: absolute;
     bottom: 100px;
-    right: 32px;
+    right: calc(50% - 688px);
   }
 
   .amen-img-wrapper .amen-img:last-child {
