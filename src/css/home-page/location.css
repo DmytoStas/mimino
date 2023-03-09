@@ -2,7 +2,9 @@
   width: 100%;
   height: 384px;
   margin-bottom: var(--main-gap);
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   border: none;
   box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
 }
