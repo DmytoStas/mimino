@@ -219,7 +219,7 @@
   top: 79px;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 79px);
   background-color: var(--main-dark-txt-cl);
   transform: translateX(-100%);
   transition: transform var(--main-transition);
@@ -240,7 +240,7 @@
   flex-direction: column;
   height: 100%;
   position: relative;
-  padding-top: 206px;
+  padding-top: 127px;
   padding-bottom: 24px;
 }
 
@@ -258,7 +258,7 @@
 
 @media screen and (min-width: 768px) {
   .mob-menu-container {
-    padding-top: 318px;
+    padding-top: 239px;
   }
 
   .mob-menu-container .nav-list {
