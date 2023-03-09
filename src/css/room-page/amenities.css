@@ -157,8 +157,17 @@ IMG AND BTN
 .amen-img-wrapper .amen-img:last-child {
   height: 182px;
   position: absolute;
-  bottom: 86px;
+  bottom: 7px;
   left: -76px;
+}
+
+@media screen and (max-width: 374.98px) {
+  .amen-img-wrapper .amen-img:last-child {
+    width: 185px;
+    height: auto;
+    bottom: 86px;
+    left: -21px;
+  }
 }
 
 /* --------------
