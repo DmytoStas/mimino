@@ -12,8 +12,12 @@
 
 /* Restaurant page */
 @import url('./header-white.css');
+@import url('./hotel-page/hero-hotel.css');
 @import url('./restaurant-page/about-a-kitchen.css');
 @import url('./restaurant-page/restaurant-menu.css');
+@import url('./footer.css');
+
+@import url('./modals/modals.css');
 
 :root {
   --main-dark-txt-cl: #121212;
@@ -24,6 +28,7 @@
 
   --main-white-txt-cl: #f7f7f7;
   --second-white-txt-cl: #d8d7d7;
+  --modal-white-txt-cl: #f6f6f6;
   --third-white-txt-cl-50: rgba(216, 215, 215, 0.5);
 
   /* Background */
