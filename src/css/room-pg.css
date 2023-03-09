@@ -12,7 +12,9 @@
 @import url('./modals/modals.css');
 
 /* Room page */
+@import url('./header-white.css');
 @import url('./room-page/room-page-hero.css');
+@import url('./footer.css');
 
 :root {
   --main-dark-txt-cl: #121212;

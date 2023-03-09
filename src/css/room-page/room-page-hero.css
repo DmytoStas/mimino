@@ -22,19 +22,19 @@
   font-style: italic;
 }
 
-.hero {
+.room-pg.hero {
   padding-top: 118px;
-  padding-bottom: 0;
+  padding-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    padding-bottom: 40px;
+  .room-pg.heroo {
+    padding-bottom: 120px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero {
+  .room-pg.hero {
     padding-top: 108px;
     padding-bottom: 82px;
     position: relative;
