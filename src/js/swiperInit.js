@@ -61,15 +61,15 @@ const swiperHotelPgHero = new Swiper('.hero-swiper', {
   uniqueNavElements: true,
   speed: 300,
   spaceBetween: 20,
-  slidesPerView: 1.5,
+  slidesPerView: 1.389,
   breakpoints: {
     768: {
       spaceBetween: 32,
-      slidesPerView: 1.6,
+      slidesPerView: 1.64,
     },
     1440: {
       spaceBetween: 32,
-      slidesPerView: 1.6,
+      slidesPerView: 1.57,
       grabCursor: true,
     },
   },
@@ -95,7 +95,7 @@ const swiperHeroRoomPg = new Swiper('.hero-room-swiper', {
     },
     1440: {
       spaceBetween: 32,
-      slidesPerView: 1.5,
+      slidesPerView: 1.57,
       grabCursor: true,
     },
   },
