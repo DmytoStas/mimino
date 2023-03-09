@@ -1,9 +1,9 @@
-.hero-hotel {
+.hero {
   padding-top: 118px;
   padding-bottom: 0;
 }
 
-.hero-hotel picture {
+.hero picture {
   background: linear-gradient(
     0deg,
     rgba(18, 18, 18, 0.2),
@@ -11,42 +11,44 @@
   );
 }
 
-.hero-hotel img {
+.hero img {
   position: relative;
   z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-hotel {
+  .hero {
     padding-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-hotel {
+  .hero {
     padding-top: 108px;
     padding-bottom: 82px;
     position: relative;
   }
 }
 
-.hero-hotel .container {
+.hero .container {
   padding-right: 0;
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-hotel .container {
+  .hero .container {
     display: flex;
   }
 }
 
 .hero-block {
   padding-right: 20px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-block {
     padding-right: 32px;
+    margin-bottom: 54px;
   }
 }
 
@@ -58,7 +60,7 @@
   }
 }
 
-.hero-hotel .hero-title {
+.hero .hero-title {
   margin-bottom: 24px;
 
   font-weight: 400;
@@ -69,7 +71,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-hotel .hero-title {
+  .hero .hero-title {
     margin-bottom: 32px;
 
     font-size: 80px;
@@ -77,25 +79,10 @@
   }
 }
 
-.hero-block {
-  margin-bottom: 40px;
-}
 
-@media screen and (min-width: 768px) {
-  .hero-block {
-    margin-bottom: 54px;
-  }
-
-  .hero-hotel .main-btn-group {
+  .hero .main-btn-group {
     justify-content: start;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .hero-hotel .main-btn-group {
-    justify-content: start;
-  }
-}
 
 @media screen and (min-width: 1440px) {
   .hero-block {
@@ -103,14 +90,14 @@
   }
 }
 
-.hero-hotel .hero-text {
+.hero .hero-text {
   line-height: calc(18 / 14);
 
   letter-spacing: 0.05em;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-hotel .hero-text {
+  .hero .hero-text {
     margin-right: auto;
     padding: 0;
     max-width: 338px;
@@ -118,7 +105,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-hotel .hero-text {
+  .hero .hero-text {
     position: absolute;
     left: calc(50% - 687px);
     bottom: 48px;
@@ -148,50 +135,45 @@
 
 /* !swiper */
 
-@media screen and (min-width: 1440px) {
-  .hotel-hero-swiper {
-    width: 703px;
-  }
-}
-
-.hotel-hero-swiper {
+.hero-swiper {
   margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
-  .hotel-hero-swiper {
+  .hero-swiper {
     margin-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hotel-hero-swiper {
+  .hero-swiper {
     margin-bottom: 0;
+    width: 703px;
   }
 }
 
-.hero-hotel .slider-btns {
+.hero .slider-btns {
   justify-content: end;
   gap: var(--main-gap);
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .hero-hotel .slider-btns {
+  .hero .slider-btns {
     margin-bottom: 0;
     order: 2;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-hotel .slider-btns {
+  .hero .slider-btns {
     position: absolute;
     bottom: 30px;
     right: calc(50% - 119px);
   }
 }
 
-.hero-hotel .slider-icon {
+.hero .slider-icon {
   display: flex;
   width: 36px;
   height: 36px;

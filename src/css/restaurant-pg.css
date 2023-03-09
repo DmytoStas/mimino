@@ -12,6 +12,7 @@
 
 /* Restaurant page */
 @import url('./header-white.css');
+@import url('./hotel-page/hero-hotel.css');
 @import url('./restaurant-page/about-a-kitchen.css');
 @import url('./restaurant-page/restaurant-menu.css');
 @import url('./footer.css');
