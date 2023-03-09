@@ -1,8 +1,8 @@
-function MultiplyPrice() {
-  selectedElement = document.getElementById('nightsSelected');
-  numOfNights = Number(selectedElement.value);
+function multiplyPrice() {
+  const selectedElement = document.getElementById('nightsSelected');
+  const numOfNights = Number(selectedElement.value);
 
-  console.log(numOfNights);
+  // console.log(numOfNights);
   let cost = 1000;
 
   switch (numOfNights) {
@@ -38,4 +38,6 @@ function MultiplyPrice() {
   document.getElementById('price').value = cost;
 }
 
-document.getElementById('nightsSelected').addEventListener('change', MultiplyPrice);
+document
+  .getElementById('nightsSelected')
+  .addEventListener('change', multiplyPrice);

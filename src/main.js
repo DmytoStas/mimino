@@ -1,8 +1,8 @@
 // Modals
 import '/js/modals.js';
 import '/js/datepicker.js';
-import '/js/multiprice.js';
 import '/js/phone-mask.js';
+import '/js/multiprice.js';
 
 // Swiper init
 import '/js/swiperInit';
