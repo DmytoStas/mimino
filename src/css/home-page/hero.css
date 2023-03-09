@@ -42,7 +42,7 @@
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
+  .hero-home {
     background-image: var(--hero-mob_tabl-bg-gradient),
       url(/img/home-page/hero/unsplash_RFDP7_80v5A_tabl@2x.jpg);
   }
@@ -127,13 +127,6 @@
   border: 0.8px solid var(--main-white-txt-cl);
   font-size: 14px;
   line-height: calc(18 / 14);
-}
-
-.hero-home .main-btn:hover,
-.hero-home .main-btn:focus {
-  color: var(--main-black-bg);
-
-  background: var(--white-hov-foc);
 }
 
 @media screen and (min-width: 768px) {
