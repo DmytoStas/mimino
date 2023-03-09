@@ -13,6 +13,8 @@
 
 /* Room page */
 @import url('./header-white.css');
+@import url('./room-page/room-page-hero.css');
+@import url('./room-page/amenities.css');
 @import url('./footer.css');
 
 :root {

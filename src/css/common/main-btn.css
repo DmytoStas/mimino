@@ -61,13 +61,13 @@
   background-color: var(--main-black-bg);
 }
 
-.hero .main-btn,
+.hero-home .main-btn,
 .hotel .main-btn {
   border-color: var(--main-white-txt-cl);
 }
 
-.hero .main-btn:hover,
-.hero .main-btn:focus,
+.hero-home .main-btn:hover,
+.hero-home .main-btn:focus,
 .hotel .main-btn:hover,
 .hotel .main-btn:focus,
 .modal-btn:hover,
