@@ -1,3 +1,4 @@
+// Modals
 import '/js/modals.js';
 import '/js/datepicker.js';
 import '/js/multiprice.js';
