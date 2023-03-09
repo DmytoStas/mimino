@@ -22,6 +22,19 @@
   font-style: italic;
 }
 
+.hero picture {
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 0.2),
+    rgba(18, 18, 18, 0.2)
+  );
+}
+
+.hero img {
+  position: relative;
+  z-index: -1;
+}
+
 .room-pg.hero {
   padding-top: 118px;
   padding-bottom: 64px;

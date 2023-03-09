@@ -9,13 +9,15 @@
 @import url('./common/utils.css');
 @import url('./common/main-btn.css');
 @import url('./common/slider-btns.css');
-@import url('./modals/modals.css');
 
 /* Hotel page */
 @import url('./header-white.css');
 @import url('./hotel-page/hero-hotel.css');
 @import url('./hotel-page/hotel-room.css');
 @import url('./footer.css');
+
+/* Modals */
+@import url('./modals/modals.css');
 
 :root {
   --main-dark-txt-cl: #121212;

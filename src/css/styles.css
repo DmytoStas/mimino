@@ -21,6 +21,7 @@
 @import url('./home-page/location.css');
 @import url('./footer.css');
 
+/* Modals */
 @import url('./modals/modals.css');
 
 :root {

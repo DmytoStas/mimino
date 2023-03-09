@@ -9,7 +9,6 @@
 @import url('./common/utils.css');
 @import url('./common/main-btn.css');
 @import url('./common/slider-btns.css');
-@import url('./modals/modals.css');
 
 /* Room page */
 @import url('./header-white.css');
@@ -17,6 +16,8 @@
 @import url('./room-page/amenities.css');
 @import url('./footer.css');
 
+/* Modals */
+@import url('./modals/modals.css');
 :root {
   --main-dark-txt-cl: #121212;
   --second-dark-txt-cl: #000;
