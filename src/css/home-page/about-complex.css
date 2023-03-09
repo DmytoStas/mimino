@@ -3,10 +3,6 @@
     |  About-complex-section
     |============================
   */
-/* 
-.about-complex {
-  padding-bottom: 64px;
-} */
 
 .about.about-img-list {
   display: flex;
@@ -208,7 +204,7 @@
 }
 
 .rating-mark.maria::before {
-  background-image: url(../img/home-page/about/Ellipse1.png);
+  background-image: url(/img/home-page/about/Ellipse1.png);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -216,12 +212,12 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .rating-mark.maria::before {
-    background-image: url(../img/home-page/about/Ellipse1@2x.png);
+    background-image: url(/img/home-page/about/Ellipse1@2x.png);
   }
 }
 
 .rating-mark.alexandr::before {
-  background-image: url(../img/home-page/about/Ellipse.png);
+  background-image: url(/img/home-page/about/Ellipse.png);
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -229,7 +225,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .rating-mark.alexandr::before {
-    background-image: url(../img/home-page/about/Ellipse@2x.png);
+    background-image: url(/img/home-page/about/Ellipse@2x.png);
   }
 }
 

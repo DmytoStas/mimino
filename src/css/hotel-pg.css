@@ -9,6 +9,7 @@
 @import url('./common/utils.css');
 @import url('./common/main-btn.css');
 @import url('./common/slider-btns.css');
+@import url('./modals/modals.css');
 
 /* Hotel page */
 @import url('./header-white.css');
@@ -25,6 +26,7 @@
 
   --main-white-txt-cl: #f7f7f7;
   --second-white-txt-cl: #d8d7d7;
+  --modal-white-txt-cl: #f6f6f6;
   --third-white-txt-cl-50: rgba(216, 215, 215, 0.5);
 
   /* Background */

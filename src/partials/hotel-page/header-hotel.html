@@ -1,172 +1,171 @@
 <header class="header" data-header>
-  <div class="header-border-container">
-    <div class="container header-container">
-      <button
-        type="button"
-        class="mobile-menu-open js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="mobile-menu-open-icon">
-          <use href="/img/sprite.svg#burger"></use>
-        </svg>
-      </button>
-      <!-- Navigation -->
+  <div class="container header-container">
+    <!-- MOBILE MENU -->
+    <div class="mob-menu js-menu-container" id="mobile-menu">
+      <div class="mob-menu-container container">
+        <!-- Navigation -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./index.html"
+                rel="noopener nofollow noreferrer"
+                >home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./hotel-pg.html"
+                rel="noopener nofollow noreferrer"
+                >hotel</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./restaurant-pg.html"
+                rel="noopener nofollow noreferrer"
+                >restaurant</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Social media -->
+        <ul class="soc-media">
+          <li class="soc-media-item">
+            <a
+              class="soc-media-link"
+              href="https://www.instagram.com/"
+              rel="noopener noreferer nofollow"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <svg class="soc-media-icon">
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
 
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
+          <li class="soc-media-item">
             <a
-              class="nav-link"
-              href="./index.html"
-              rel="noopener nofollow noreferrer"
-              >home</a
+              class="soc-media-link"
+              href="https://www.facebook.com/"
+              rel="noopener noreferer nofollow"
+              target="_blank"
+              aria-label="Facebook"
             >
+              <svg class="soc-media-icon">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </li>
-          <li class="nav-item">
+
+          <li class="soc-media-item">
             <a
-              class="nav-link current"
-              href="./hotel-pg.html"
-              rel="noopener nofollow noreferrer"
-              >hotel</a
+              class="soc-media-link"
+              href="https://twitter.com/"
+              rel="noopener noreferer nofollow"
+              target="_blank"
+              aria-label="Twitter"
             >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="./restaurant-pg.html"
-              rel="noopener nofollow noreferrer"
-              >restaurant</a
-            >
+              <svg class="soc-media-icon">
+                <use href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
+      </div>
+    </div>
 
-      <!-- Logo -->
-      <a class="logo" href="" rel="noopener nofollow noreferrer">
-        <span class="accent">Mimino</span> restaurant-hotel complex
-      </a>
-      <!-- Social media -->
-      <ul class="soc-media">
-        <li class="soc-media-item">
+    <button
+      type="button"
+      class="mobile-menu-open js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="mobile-menu-open-icon">
+        <use class="buger" href="/img/sprite.svg#burger"></use>
+        <use class="close-icon" href="/img/sprite.svg#x-close"></use>
+      </svg>
+    </button>
+    <!-- Navigation -->
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
           <a
-            class="soc-media-link"
-            href="https://www.instagram.com/"
-            rel="noopener noreferer nofollow"
-            target="_blank"
-            aria-label="Instagram"
+            class="nav-link"
+            href="./index.html"
+            rel="noopener nofollow noreferrer"
+            >home</a
           >
-            <svg class="soc-media-icon">
-              <use href="/img/sprite.svg#instagram"></use>
-            </svg>
-          </a>
         </li>
-        <li class="soc-media-item">
+        <li class="nav-item">
           <a
-            class="soc-media-link"
-            href="https://www.facebook.com/"
-            rel="noopener noreferer nofollow"
-            target="_blank"
-            aria-label="Facebook"
+            class="nav-link current"
+            href="./hotel-pg.html"
+            rel="noopener nofollow noreferrer"
+            >hotel</a
           >
-            <svg class="soc-media-icon">
-              <use href="/img/sprite.svg#facebook"></use>
-            </svg>
-          </a>
         </li>
-        <li class="soc-media-item">
+        <li class="nav-item">
           <a
-            class="soc-media-link"
-            href="https://twitter.com/"
-            rel="noopener noreferer nofollow"
-            target="_blank"
-            aria-label="Twitter"
+            class="nav-link"
+            href="./restaurant-pg.html"
+            rel="noopener nofollow noreferrer"
+            >restaurant</a
           >
-            <svg class="soc-media-icon">
-              <use href="/img/sprite.svg#twitter"></use>
-            </svg>
-          </a>
         </li>
       </ul>
-    </div>
-  </div>
+    </nav>
 
-  <!-- MOBILE MENU -->
-  <div class="mob-menu js-menu-container" id="mobile-menu">
-    <div class="mob-menu-container container">
-      <!-- Navigation -->
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a
-              class="nav-link current"
-              href="./index.html"
-              rel="noopener nofollow noreferrer"
-              >home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="./hotel-pg.html"
-              rel="noopener nofollow noreferrer"
-              >hotel</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="./restaurant-pg.html"
-              rel="noopener nofollow noreferrer"
-              >restaurant</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <!-- Social media -->
-      <ul class="soc-media">
-        <li class="soc-media-item">
-          <a
-            class="soc-media-link"
-            href="https://www.instagram.com/"
-            rel="noopener noreferer nofollow"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <svg class="soc-media-icon">
-              <use href="./img/sprite.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="soc-media-item">
-          <a
-            class="soc-media-link"
-            href="https://www.facebook.com/"
-            rel="noopener noreferer nofollow"
-            target="_blank"
-            aria-label="Facebook"
-          >
-            <svg class="soc-media-icon">
-              <use href="./img/sprite.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="soc-media-item">
-          <a
-            class="soc-media-link"
-            href="https://twitter.com/"
-            rel="noopener noreferer nofollow"
-            target="_blank"
-            aria-label="Twitter"
-          >
-            <svg class="soc-media-icon">
-              <use href="./img/sprite.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <!-- Logo -->
+    <a class="logo" href="../index.html" rel="noopener nofollow noreferrer">
+      <span class="accent">Mimino</span> restaurant-hotel complex
+    </a>
+    <!-- Social media -->
+    <ul class="soc-media">
+      <li class="soc-media-item">
+        <a
+          class="soc-media-link"
+          href="https://www.instagram.com/"
+          rel="noopener noreferer nofollow"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <svg class="soc-media-icon">
+            <use href="/img/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="soc-media-item">
+        <a
+          class="soc-media-link"
+          href="https://www.facebook.com/"
+          rel="noopener noreferer nofollow"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <svg class="soc-media-icon">
+            <use href="/img/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="soc-media-item">
+        <a
+          class="soc-media-link"
+          href="https://twitter.com/"
+          rel="noopener noreferer nofollow"
+          target="_blank"
+          aria-label="Twitter"
+        >
+          <svg class="soc-media-icon">
+            <use href="/img/sprite.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </header>
