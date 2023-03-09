@@ -14,10 +14,14 @@
 /* Main page */
 @import url('./home-page/header-home.css');
 @import url('./home-page/hero.css');
+@import url('./home-page/about-complex.css');
 @import url('./home-page/restaurant.css');
 @import url('./home-page/welcome.css');
 @import url('./home-page/hotel.css');
 @import url('./home-page/location.css');
+@import url('./footer.css');
+
+@import url('./modals/modals.css');
 
 :root {
   --main-dark-txt-cl: #121212;
@@ -28,6 +32,7 @@
 
   --main-white-txt-cl: #f7f7f7;
   --second-white-txt-cl: #d8d7d7;
+  --modal-white-txt-cl: #f6f6f6;
   --third-white-txt-cl-50: rgba(216, 215, 215, 0.5);
 
   /* Background */

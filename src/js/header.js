@@ -23,14 +23,6 @@ function changeHeaderBackground() {
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
 
-    if (isMenuOpen) {
-      openMenuBtn.innerHTML =
-        '<svg class="mobile-menu-open-icon"><use href="/img/sprite.svg#burger"></use></svg>';
-    } else {
-      openMenuBtn.innerHTML =
-        '<svg class="close-icon"><use href="/img/sprite.svg#x-close"></use></svg>';
-    }
-
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';

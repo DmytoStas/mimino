@@ -1,0 +1,113 @@
+.footer {
+  padding: 24px 0 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 32px 0 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 44px 0 80px;
+  }
+}
+
+.footer::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: 0.5px solid var(--gray-arrow-cl-30);
+}
+
+.footer .container {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer .container {
+    padding-bottom: 80px;
+  }
+}
+
+/* Navigation  */
+
+.footer .nav {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer .nav {
+    display: flex;
+    margin-right: 370px;
+  }
+}
+
+.footer .nav-link {
+  color: var(--main-dark-txt-cl);
+}
+
+.footer .nav-link::after {
+  content: '';
+  background-color: var(--main-dark-txt-cl);
+}
+
+/* Logo  */
+.footer .logo {
+  align-items: flex-start;
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--main-dark-txt-cl);
+}
+
+@media screen and (min-width: 1440px) {
+  .footer .logo {
+    align-items: center;
+  }
+}
+
+.footer .accent {
+  font-size: 20px;
+  line-height: 1.2;
+  color: inherit;
+}
+
+/* Social media */
+
+.footer .soc-media {
+  display: flex;
+  align-items: center;
+  gap: var(--soc-media-gap);
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .soc-media {
+    gap: 16px;
+  }
+}
+
+.footer .soc-media-icon {
+  stroke: var(--main-dark-txt-cl);
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .soc-media-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer .soc-media-link:hover .soc-media-icon,
+.footer .soc-media-link:focus .soc-media-icon {
+  fill: var(--main-dark-txt-cl); /* наполняет цветом как и границы */
+  transform: scale(1.2); /* немного увеличивает значки */
+  --instagram-inside-color: var(
+    --main-white-txt-cl
+  ); /* меняет цвет внутри значка инстаграм на черный */
+}
