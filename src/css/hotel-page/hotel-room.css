@@ -1,8 +1,13 @@
 /* ====================
     FOR MOBILE 
 ===================== */
+
 .hotel-room.section {
   padding-bottom: 0;
+}
+
+.last-section.section {
+  padding-bottom: 64px;
 }
 
 .hotel-room .section-title {
@@ -46,6 +51,10 @@
     FOR TABLET 
 ===================== */
 @media screen and (min-width: 768px) {
+  .last-section.section {
+    padding-bottom: 80px;
+  }
+
   .hotel-room-container {
     position: relative;
   }
@@ -63,6 +72,10 @@
   .hotel-room-img-list {
     gap: var(--main-gap);
     margin-bottom: 40px;
+  }
+
+  .section.last-section .section-text-container {
+    max-width: 475px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1439.98px) {
@@ -125,6 +138,10 @@
 ===================== */
 
 @media screen and (min-width: 1440px) {
+  .last-section.section {
+    padding-bottom: 100px;
+  }
+
   .hotel-room-img-list {
     flex-direction: row-reverse;
     justify-content: space-between;
