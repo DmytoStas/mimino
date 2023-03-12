@@ -152,11 +152,7 @@
   background-color: var(--main-dark-txt-cl);
   box-shadow: 1px 7px 22px var(--rating-mark-shd-cl-10);
   border-radius: 6px;
-
-  transition: transform var(--main-transition);
 }
-
-
 
 @media screen and (max-width: 374.98px) {
   .rating-mark.maria {
@@ -168,16 +164,6 @@
     top: 33%;
     left: 0;
   }
-
-  .rating-mark.maria:hover,
-.rating-mark.maria:focus{
-  transform: translateX(-30px) scale(1.2);
-}
-
-  .rating-mark.alexandr:hover,
-.rating-mark.alexandr:focus{
-  transform: translateX(30px) scale(1.2);
-}
 }
 
 @media screen and (min-width: 375px) and (max-width: 767.98px) {
@@ -190,16 +176,6 @@
     top: 272px;
     left: 0;
   }
-
-    .rating-mark.maria:hover,
-.rating-mark.maria:focus{
-  transform: translateX(-30px) scale(1.2);
-}
-
-  .rating-mark.alexandr:hover,
-.rating-mark.alexandr:focus{
-  transform: translateX(30px) scale(1.2);
-}
 }
 
 @media screen and (min-width: 768px) {
@@ -212,28 +188,22 @@
     top: 303px;
     right: 425px;
   }
-
-      .rating-mark.maria:hover,
-.rating-mark.maria:focus{
-  transform: translateX(-30px) scale(1.2);
-}
-
-  .rating-mark.alexandr:hover,
-.rating-mark.alexandr:focus{
-  transform: translateX(30px) scale(1.2);
-}
 }
 
 @media screen and (min-width: 1440px) {
-      .rating-mark.maria:hover,
-.rating-mark.maria:focus{
-  transform: translateX(30px) scale(1.2);
-}
+  .rating-mark {
+    transition: transform var(--main-transition);
+  }
+
+  .rating-mark.maria:hover,
+  .rating-mark.maria:focus {
+    transform: translateX(30px) scale(1.2);
+  }
 
   .rating-mark.alexandr:hover,
-.rating-mark.alexandr:focus{
-  transform: translateX(-30px) scale(1.2);
-}
+  .rating-mark.alexandr:focus {
+    transform: translateX(-30px) scale(1.2);
+  }
 }
 
 .rating-mark::before {

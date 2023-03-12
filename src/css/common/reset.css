@@ -20,12 +20,16 @@ img {
   font-size: 0;
   max-width: 100%;
   height: auto;
-
-  transition: transform var(--main-transition);
 }
 
-img:hover {
-  transform: scale(1.07);
+@media screen and (min-width: 1440px) {
+  img {
+    transition: transform var(--main-transition);
+  }
+
+  img:hover {
+    transform: scale(1.07);
+  }
 }
 
 picture {
