@@ -1,0 +1,69 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./common/body.css');
+@import url('./common/reset.css');
+@import url('./common/utils.css');
+@import url('./common/main-btn.css');
+@import url('./common/slider-btns.css');
+
+/* Room page */
+@import url('./header-white.css');
+@import url('./room-page/room-page-hero.css');
+@import url('./room-page/amenities.css');
+@import url('./footer.css');
+
+/* Modals */
+@import url('./modals/modals.css');
+
+/* Animations */
+@import url('./common/hero-animations.css');
+
+:root {
+  --main-dark-txt-cl: #121212;
+  --second-dark-txt-cl: #000;
+
+  --gray-txt-cl: #484848;
+  --second-gray-txt-cl: #575757;
+
+  --main-white-txt-cl: #f7f7f7;
+  --second-white-txt-cl: #d8d7d7;
+  --modal-white-txt-cl: #f6f6f6;
+  --third-white-txt-cl-50: rgba(216, 215, 215, 0.5);
+
+  /* Background */
+  --main-black-bg: #121212;
+  --main-gray-bg: #f6f6f6;
+  --backdrop-bg-40: rgba(46, 47, 66, 0.4);
+  --hero-desk-bg-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 70.73%,
+    rgba(18, 18, 18, 0.8) 100%
+  );
+  --hero-mob_tabl-bg-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 70.73%,
+    #121212 98.51%
+  );
+
+  /* Other */
+  --white-hov-foc: #fff;
+  --gray-arrow-cl-30: rgba(18, 18, 18, 0.3);
+  --second-gray-arrow-cl-30: rgba(247, 247, 247, 0.3);
+  --header-border-cl-20: rgba(247, 247, 247, 0.2);
+  --rating-mark-shd-cl-10: rgba(0, 0, 0, 0.1);
+
+  --main-gap: 32px;
+  --soc-media-gap: 14px;
+  --main-btn-gap-mob: 12px;
+  --main-btn-gap-tabl: 14px;
+
+  --main-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --z-index-header: 999;
+  --z-index-hero-cont: 1;
+  --z-index-rating-mark-block: 2;
+}

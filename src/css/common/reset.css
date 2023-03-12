@@ -20,11 +20,19 @@ img {
   font-size: 0;
   max-width: 100%;
   height: auto;
+
+  transition: transform var(--main-transition);
+}
+
+img:hover {
+  transform: scale(1.07);
 }
 
 picture {
   font-size: 0;
   display: block;
+
+  overflow: hidden;
 }
 
 ul {
