@@ -79,10 +79,9 @@
   }
 }
 
-
-  .hero .main-btn-group {
-    justify-content: start;
-  }
+.hero .main-btn-group {
+  justify-content: start;
+}
 
 @media screen and (min-width: 1440px) {
   .hero-block {
@@ -177,4 +176,38 @@
   display: flex;
   width: 36px;
   height: 36px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-title {
+    animation: left-to-right 700ms cubic-bezier(0.4, 0, 0.2, 1) alternate;
+  }
+
+  .hero .main-btn-group {
+    animation: zoom-in-on-right 400ms cubic-bezier(0.4, 0, 0.2, 1) 350ms
+      alternate both;
+  }
+
+  .hero .main-btn-group-item:first-child .main-btn {
+    animation: zoom-in-on-right 400ms cubic-bezier(0.4, 0, 0.2, 1) 450ms
+      alternate both;
+  }
+
+  .hero-text {
+    animation: left-to-right 700ms cubic-bezier(0.4, 0, 0.2, 1) 350ms alternate
+      both;
+  }
+
+  .swiper-container {
+    overflow: hidden;
+  }
+
+  .hero-swiper {
+    animation: bg-right-to-left 700ms cubic-bezier(0.4, 0, 0.2, 1) 150ms
+      alternate both;
+  }
+
+  .slider-btns {
+    animation: drop-down 400ms cubic-bezier(0.4, 0, 0.2, 1) 700ms alternate both;
+  }
 }

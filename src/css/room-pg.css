@@ -18,6 +18,10 @@
 
 /* Modals */
 @import url('./modals/modals.css');
+
+/* Animations */
+@import url('./common/hero-animations.css');
+
 :root {
   --main-dark-txt-cl: #121212;
   --second-dark-txt-cl: #000;
